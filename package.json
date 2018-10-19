@@ -1,0 +1,53 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "roadhog server",
+    "build": "roadhog build",
+    "lint": "eslint --ext .js src test",
+    "precommit": "npm run lint",
+    "structor": "structor"
+  },
+  "engines": {
+    "install-node": "6.9.2"
+  },
+  "theme": {
+    "primary-color": "#1DA57A"
+  },
+  "dependencies": {
+    "@antv/data-set": "^0.8.9",
+    "@aspnet/signalr": "^1.0.2",
+    "antd": "^3.9.2",
+    "babel-plugin-import": "^1.6.5",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.9.2",
+    "bizcharts": "^3.1.7",
+    "dva": "2",
+    "dva-cli": "0.7",
+    "js-export-excel": "^1.1.2",
+    "moment": "^2.22.1",
+    "ramda": "^0.25.0",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "semantic-ui-css": "^2.3.0",
+    "semantic-ui-react": "^0.78.3",
+    "serve": "^6.5.6",
+    "structor": "^2.3.2",
+    "thenby": "^1.2.6",
+    "tslib": "^1.9.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-dva-hmr": "^0.3.2",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "expect": "^1.20.2",
+    "husky": "^0.12.0",
+    "redbox-react": "^1.4.3",
+    "roadhog": "^1.1.1",
+    "semantic-ui-react": "^0.78.3"
+  }
+}

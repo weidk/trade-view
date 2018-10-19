@@ -1,0 +1,38 @@
+{
+  "entry": "src/index.js",
+  "disableCSSModules": false,
+  "theme": {
+    "@primary-color": "#1DA57A",
+    "@link-color": "#1DA57A",
+    "@border-radius-base": "2px",
+    "@font-size-base": "16px",
+    "@line-height-base": "1.2"
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://127.0.0.1:6000/",
+      "changeOrigin": true
+    },
+    "/signalrapi/bpchange": {
+      "target": "http://127.0.0.1:5000/",
+      "changeOrigin": true,
+      "ws": true
+    },
+    "/marketmakerapi/quote": {
+      "target": "http://127.0.0.1:5800/",
+      "changeOrigin": true,
+      "ws": true
+    }
+  },
+  "extraBabelPlugins": [
+    "dva-hmr",
+    ["import", { "libraryName": "antd", "style": true }]
+  ],
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr"
+      ]
+    }
+  }
+}
