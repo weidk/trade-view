@@ -7,7 +7,7 @@ const RangePicker = DatePicker.RangePicker;
 
 class HidenDatePicker extends React.Component {
   disabledDate = (current) => {
-    return current < moment('2018-01-01');
+    return current >= moment().startOf('day') || current < moment('2018-01-01');
   }
 
   render() {

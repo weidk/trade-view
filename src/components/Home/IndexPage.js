@@ -29,6 +29,9 @@ class IndexPage extends React.Component {
                         if (value === 'donghai888') {
                           storage.setItem('login', true);
                           message.success('登录成功');
+                        } else if (value === 'trade123') {
+                          storage.setItem('login1', true);
+                          message.success('登录成功');
                         } else {
                           message.error('登录密码错误');
                         }

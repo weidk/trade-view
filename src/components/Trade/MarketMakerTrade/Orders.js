@@ -15,7 +15,7 @@ function Orders(props) {
   return (
     <div className={styles.normal}>
       <Tabs tabPosition="left">
-        <TabPane tab={<Icon type="sync" spin />} key="1" ><OrderIng data={IngData} onCancle={onCancle} /></TabPane>
+        <TabPane tab={<Icon type="plus" />} key="1" ><OrderIng data={IngData} onCancle={onCancle} /></TabPane>
         <TabPane tab={<Icon type="check" />} key="2"><OrderOver data={OverData} /></TabPane>
       </Tabs>
     </div>

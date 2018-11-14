@@ -4,9 +4,15 @@ import dynamic from 'dva/dynamic';
 import { message } from 'antd';
 
 
-function requireAuth(Layout, props) {
+function requireAuth(Layout, props, authType) {
   const storage = window.localStorage;
-  const isLogin = storage.getItem('login');
+  let isLogin;
+  if (authType === 0) {
+    isLogin = storage.getItem('login');
+  } else {
+    isLogin = storage.getItem('login1');
+  }
+
   if (isLogin) { // 登录成功
     return <Layout {...props} />;
   } else {
@@ -41,8 +47,8 @@ function RouterConfig({ history, app }) {
       <Switch>
         <Route exact path="/" component={IndexPage} />
         <Route exact path="/market" component={MarketMain} />
-        <Route exact path="/trade" component={props => requireAuth(TradeSystem, props)} />
-        <Route exact path="/tools" component={props => requireAuth(ToolsMain, props)} />
+        <Route exact path="/trade" component={props => requireAuth(TradeSystem, props, 1)} />
+        <Route exact path="/tools" component={props => requireAuth(ToolsMain, props, 0)} />
       </Switch>
     </Router>
   );
