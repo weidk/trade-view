@@ -3,6 +3,7 @@ import { Table } from 'antd';
 // import styles from './BPMPosition.css';
 import request from '../../../utils/request';
 
+const R = require('ramda');
 
 class BPMPosition extends React.Component {
   constructor() {
@@ -19,10 +20,17 @@ class BPMPosition extends React.Component {
    getFilters=() => {
      const { data } = this.state;
      if (data.length > 0) {
-       const tempTraderSet = new Set();
-       data.forEach(d => tempTraderSet.add({ text: d.DEALUSERNAME, value: d.DEALUSERNAME }));
-       const tempTraderArr = Array.from(tempTraderSet);
-       this.setState({ filterTraders: Array.from(tempTraderArr) });
+       // const tempTraderSet = new Set();
+       // data.forEach(d => tempTraderSet.add({ text: d.DEALUSERNAME, value: d.DEALUSERNAME }));
+       // const tempTraderArr = Array.from(tempTraderSet);
+       // this.setState({ filterTraders: Array.from(tempTraderArr) });
+
+       const traders = R.pluck('DEALUSERNAME')(data);
+       const filterTrader = R.uniq(traders);
+       const traderList = [];
+       filterTrader.forEach(d => traderList.push({ text: d, value: d }));
+       this.setState({ filterTraders: traderList,
+       });
      }
    };
 
@@ -59,8 +67,8 @@ class BPMPosition extends React.Component {
         { text: '大於0', value: 1 },
       ],
       onFilter: (value, record) => {
-        console.log(value);
-        console.log(record);
+        // console.log(value);
+        // console.log(record);
         if (value > 0) {
           return record.AVAILABLEFACEVALUE > 0;
         } else {

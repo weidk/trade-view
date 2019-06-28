@@ -1,5 +1,5 @@
 import React from 'react';
-import { Chart, Geom, Axis, Tooltip } from 'bizcharts';
+import { Chart, Geom, Axis, Tooltip, Legend } from 'bizcharts';
 import styles from './BondLendArea.css';
 
 class BondLendArea extends React.Component {
@@ -16,8 +16,9 @@ class BondLendArea extends React.Component {
             }}
           />
           <Tooltip crosshairs={{ type: 'line' }} />
-          <Geom type="area" position="date*amt" color="#2E8B57" shape={'smooth'} />
-          <Geom type="line" position="date*amt" size={1} color="#2E8B57" shape={'smooth'} />
+          <Legend />
+          <Geom type="area" position="date*amt" color="code" shape={'smooth'} />
+          <Geom type="line" position="date*amt" color="code" shape={'smooth'} size={3} />
         </Chart>
       </div>
     );

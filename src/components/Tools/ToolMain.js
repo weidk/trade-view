@@ -6,8 +6,10 @@ import MainContent from '../Layout/MainContent';
 import Position from './Position/Position';
 import PosMain from './SPositions/PosMain';
 import ReportMain from './Report/ReportMain';
-import SysMonitorMain from './SystemMonitor/SysMonitorMain';
-import SaleMain from './Sales/SaleMain'
+// import SysMonitorMain from './SystemMonitor/SysMonitorMain';
+import SaleMain from './Sales/SaleMain';
+import TodoMain from './TodoAlarm/TodoMain';
+import XBondMain from './XBond/XBondMain';
 
 const TabPane = Tabs.TabPane;
 
@@ -22,7 +24,8 @@ class ToolMain extends React.Component {
               <TabPane tab="现券持仓" key="2"><PosMain /></TabPane>
               <TabPane tab="投资报表" key="3"><ReportMain /></TabPane>
               <TabPane tab="销售报表" key="4"><SaleMain /></TabPane>
-              <TabPane tab="系统监控" key="5"><SysMonitorMain /></TabPane>
+              <TabPane tab="XBond报表" key="5"><XBondMain /></TabPane>
+              <TabPane tab="语音提醒" key="6"><TodoMain /></TabPane>
             </Tabs>
           </MainContent>
         </div>

@@ -6,6 +6,7 @@ import MainMenu from '../Layout/MainMenu';
 import MainContent from '../Layout/MainContent';
 // import styles from './IndexPage.css';
 
+
 const Search = Input.Search;
 
 class IndexPage extends React.Component {
@@ -59,6 +60,7 @@ class IndexPage extends React.Component {
               {/* </Segment>*/}
             </Divider>
           </Container>
+
         </MainContent>
       </MainMenu>
     );

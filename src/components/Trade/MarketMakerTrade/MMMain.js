@@ -46,23 +46,30 @@ class MMMain extends React.Component {
             });
           this.state.hubConnection.on('Deals',
             (receiveJson) => {
-              console.log(receiveJson);
+              // console.log(receiveJson);
               this.setState({ dealdata: receiveJson });
             });
         })
-        .catch(err => console.error(err.toString()));
+        .catch(
+          // err =>
+          // console.error(err.toString())
+        );
     });
   };
   sendNewOrder = (values) => {
-    this.state.hubConnection.invoke('SendNewOrder', values).catch((err) => {
-      return console.error(err.toString());
-    });
+    this.state.hubConnection.invoke('SendNewOrder', values).catch(
+      // (err) => {
+      //   return console.error(err.toString());
+      // }
+    );
   };
 
   CancleOrder = (values) => {
-    this.state.hubConnection.invoke('CancleOrder', values).catch((err) => {
-      return console.error(err.toString());
-    });
+    this.state.hubConnection.invoke('CancleOrder', values).catch(
+    //   (err) => {
+    //   return console.error(err.toString());
+    // }
+    );
   };
 
   render() {

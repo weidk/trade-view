@@ -4,11 +4,12 @@ import { DataView } from '@antv/data-set';
 import styles from './FRprofitPie.css';
 import request from '../../../utils/request';
 
+
 class FRprofitPie extends React.Component {
   constructor() {
     super();
     this.state = {
-      chartdata: [],
+      piedata: [],
     };
   }
 
@@ -19,13 +20,13 @@ class FRprofitPie extends React.Component {
   fetchData = () => {
     const pms = request('/api/reportfrprofit');
     pms.then((datas) => {
-      this.setState({ chartdata: datas.data });
+      this.setState({ piedata: datas.data });
     }).catch(err => ({ err }));
   }
 
   render() {
     const dv = new DataView();
-    const data = this.state.chartdata;
+    const data = this.state.piedata;
     dv.source(data).transform({
       type: 'percent',
       field: 'count',
@@ -43,7 +44,7 @@ class FRprofitPie extends React.Component {
         <Chart data={dv} scale={cols} padding={[80, 100, 80, 80]} forceFit>
           <Coord type="theta" radius={0.75} />
           <Axis name="percent" />
-          <Legend position="buttom" />
+          <Legend position="right" />
           <Tooltip
             showTitle={false}
             itemTpl='<li><span style="background-color:{color};" class="g2-tooltip-marker"></span>{name}: {value}</li>'

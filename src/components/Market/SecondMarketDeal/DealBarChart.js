@@ -3,6 +3,7 @@ import { Modal } from 'antd';
 import { Chart, Geom, Tooltip, Coord, Axis } from 'bizcharts';
 import styles from './DealBarChart.css';
 import DealTsBar from './DealTsBar';
+// import DealTsBar1 from './DealTsBar1';
 
 class DealBarChart extends React.Component {
   constructor() {
@@ -14,13 +15,13 @@ class DealBarChart extends React.Component {
     };
   }
 
-  handleOk = (e) => {
+  handleOk = () => {
     this.setState({
       visible: false,
     });
   }
 
-  handleCancel = (e) => {
+  handleCancel = () => {
     this.setState({
       visible: false,
     });
@@ -28,20 +29,28 @@ class DealBarChart extends React.Component {
   showModal = (ev) => {
     this.setState({
       visible: true,
-      x: ev.data._origin.机构,
-      y: ev.data._origin.种类,
+      x: ev.data._origin.机构, /* eslint no-underscore-dangle: 0 */
+      y: ev.data._origin.种类, /* eslint no-underscore-dangle: 0 */
     });
   }
+
   render() {
     const scale = {
       数量: {
         tickCount: 3,
       },
     };
+    // let DealTs;
+    // if (this.state.y === '五年' || this.state.y === '七年十年') {
+    //   DealTs = (<DealTsBar1 ins={this.state.x} type={this.state.y} />);
+    // } else {
+    //   DealTs = (<DealTsBar ins={this.state.x} type={this.state.y} />);
+    // }
+    const DealTs = (<DealTsBar ins={this.state.x} type={this.state.y} />);
     return (
       <div className={styles.normal} >
         <h3>{this.props.title}</h3>
-        <Chart data={this.props.dealbardata} forceFit padding="auto" scale={scale} onPlotDblClick={ev => this.showModal(ev)} >
+        <Chart height="500" data={this.props.dealbardata} forceFit padding="auto" scale={scale} onPlotDblClick={ev => this.showModal(ev)} >
           <Coord transpose />
           <Axis name="机构" label={{ offset: 12 }} />
           <Axis name="数量" />
@@ -57,7 +66,7 @@ class DealBarChart extends React.Component {
           footer={null}
           destroyOnClose="true"
         >
-          <DealTsBar ins={this.state.x} type={this.state.y} />
+          {DealTs}
         </Modal>
       </div>
     );

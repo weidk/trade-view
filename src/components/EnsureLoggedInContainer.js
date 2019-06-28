@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 class EnsureLoggedInContainer extends React.Component {
   componentDidMount() {
     const { isLoggedIn } = this.props;
-    console.log(isLoggedIn);
     if (!isLoggedIn) {
       message.warn('please login in.');
     }

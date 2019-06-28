@@ -35,8 +35,8 @@ class PositionPie extends React.Component {
     const cols = {
       percent: {
         formatter: (val) => {
-          val = `${(val * 100).toFixed(2)}%`;
-          return val;
+          const valnew = `${(val * 100).toFixed(2)}%`;
+          return valnew;
         },
       },
     };
@@ -60,10 +60,10 @@ class PositionPie extends React.Component {
             position="percent"
             color="ftype"
             tooltip={['ftype*percent', (item, percent) => {
-              percent = `${(percent * 100).toFixed(2)}%`;
+              const percentnew = `${(percent * 100).toFixed(2)}%`;
               return {
                 name: item,
-                value: percent,
+                value: percentnew,
               };
             }]}
             style={{ lineWidth: 1, stroke: '#fff' }}
@@ -78,10 +78,10 @@ class PositionPie extends React.Component {
               position="percent"
               color={['stype', ['#BAE7FF', '#7FC9FE', '#71E3E3', '#ABF5F5', '#8EE0A1', '#BAF5C4']]}
               tooltip={['stype*percent', (item, percent) => {
-                percent = `${(percent * 100).toFixed(2)}%`;
+                const percentnew = `${(percent * 100).toFixed(2)}%`;
                 return {
                   name: item,
-                  value: percent,
+                  value: percentnew,
                 };
               }]}
               style={{ lineWidth: 1, stroke: '#fff' }}

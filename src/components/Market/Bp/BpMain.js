@@ -41,7 +41,9 @@ class BpMain extends React.Component {
               this.setState({ tenYear, fiveYear, oneYear });
             });
         })
-        .catch(err => console.error(err.toString()));
+        .catch(
+          // err => console.error(err.toString())
+        );
     });
   }
 

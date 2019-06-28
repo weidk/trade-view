@@ -2,47 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4243f2f-74f1-4643-87e6-cc7f8f2efab5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/china.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Bank/BankMain.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Bank/BankMain.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Bank/ChinaChart.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Bank/ChinaChart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Bank/TraderBankTsChart.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Bank/TraderBankTsChart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Relative/RelativeBubbleChart.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Relative/RelativeBubbleChart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Relative/RelativeMain.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Relative/RelativeMain.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTsBar1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTsBarNew.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/TodoAlarm/PositionModal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/TodoAlarm/TodoMain.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/TodoAlarm/TodoMain.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/TodoAlarm/TodoModal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/TodoAlarm/TodoTable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tools/TodoAlarm/TodoTable.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintrc" afterPath="$PROJECT_DIR$/.eslintrc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/EnsureLoggedInContainer.js" afterPath="$PROJECT_DIR$/src/components/EnsureLoggedInContainer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/IndexPage.js" afterPath="$PROJECT_DIR$/src/components/Home/IndexPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Layout/MainMenu.js" afterPath="$PROJECT_DIR$/src/components/Layout/MainMenu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/BondDeal/BondDealMain.js" afterPath="$PROJECT_DIR$/src/components/Market/BondDeal/BondDealMain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/BondLend/BondLendArea.js" afterPath="$PROJECT_DIR$/src/components/Market/BondLend/BondLendArea.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/BondLend/BondLendMain.js" afterPath="$PROJECT_DIR$/src/components/Market/BondLend/BondLendMain.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/Bp/BpMain.js" afterPath="$PROJECT_DIR$/src/components/Market/Bp/BpMain.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/HidenCredit/HidenCreditMain.js" afterPath="$PROJECT_DIR$/src/components/Market/HidenCredit/HidenCreditMain.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/HidenCredit/HidenDatePicker.js" afterPath="$PROJECT_DIR$/src/components/Market/HidenCredit/HidenDatePicker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/Issue/Issue.js" afterPath="$PROJECT_DIR$/src/components/Market/Issue/Issue.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/Issue/IssueDatePicker.js" afterPath="$PROJECT_DIR$/src/components/Market/Issue/IssueDatePicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/MarketMain.js" afterPath="$PROJECT_DIR$/src/components/Market/MarketMain.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/MarketMaker/MarketMakerDealChart.js" afterPath="$PROJECT_DIR$/src/components/Market/MarketMaker/MarketMakerDealChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/MarketMaker/MarketMakerMain.js" afterPath="$PROJECT_DIR$/src/components/Market/MarketMaker/MarketMakerMain.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealBarChart.js" afterPath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealBarChart.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealMain.js" afterPath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealMain.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTsBar.js" afterPath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTsBar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tools/Position/Position.js" afterPath="$PROJECT_DIR$/src/components/Tools/Position/Position.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tools/Report/FRprofitPie.js" afterPath="$PROJECT_DIR$/src/components/Tools/Report/FRprofitPie.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tools/Report/PositionPie.js" afterPath="$PROJECT_DIR$/src/components/Tools/Report/PositionPie.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tools/Report/ProfitChart.js" afterPath="$PROJECT_DIR$/src/components/Tools/Report/ProfitChart.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tools/SPositions/BPMPosition.js" afterPath="$PROJECT_DIR$/src/components/Tools/SPositions/BPMPosition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tools/SPositions/PosMain.js" afterPath="$PROJECT_DIR$/src/components/Tools/SPositions/PosMain.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tools/Sales/Institute/InstituteRank.js" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Institute/InstituteRank.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tools/Sales/SaleMain.js" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/SaleMain.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tools/Sales/Trader/TraderRank.js" afterPath="$PROJECT_DIR$/src/components/Tools/Sales/Trader/TraderRank.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tools/ToolMain.js" afterPath="$PROJECT_DIR$/src/components/Tools/ToolMain.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Trade/MarketMakerTrade/MMMain.js" afterPath="$PROJECT_DIR$/src/components/Trade/MarketMakerTrade/MMMain.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Trade/MarketMakerTrade/Orders.js" afterPath="$PROJECT_DIR$/src/components/Trade/MarketMakerTrade/Orders.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/TradeSystem/LimitQuotes.js" afterPath="$PROJECT_DIR$/src/components/TradeSystem/LimitQuotes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/TradeSystem/MarketQuotes.js" afterPath="$PROJECT_DIR$/src/components/TradeSystem/MarketQuotes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router.js" afterPath="$PROJECT_DIR$/src/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn-error.log" afterPath="$PROJECT_DIR$/yarn-error.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,66 +68,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BankMain.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Bank/BankMain.js">
+      <file leaf-file-name="ReletiveChartAll.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveChartAll.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="84" column="55" lean-forward="true" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="91" />
+            <state relative-caret-position="2158">
+              <caret line="87" column="33" lean-forward="false" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MMMain.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Trade/MarketMakerTrade/MMMain.js">
+      <file leaf-file-name="AbsoluteCurve.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Market/CurveMat/AbsoluteCurve.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+            <state relative-caret-position="285">
+              <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MarketQuotes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/TradeSystem/MarketQuotes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DealBarChart.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealBarChart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RelativeMain.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Relative/RelativeMain.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -142,36 +101,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>49a9ee</find>
-      <find>0e77ca</find>
-      <find>pattern</find>
-      <find>Date.prototype</find>
-      <find>getFieldDecorator</find>
-      <find>console</find>
-      <find>console.log</find>
-      <find>Axis</find>
-      <find>dateFormat</find>
+      <find>datagri</find>
+      <find>datagr</find>
+      <find>datag</find>
+      <find>d</find>
+      <find>view</find>
+      <find>datavi</find>
+      <find>datav</find>
+      <find>dataView</find>
+      <find>dataVie</find>
+      <find>dataVi</find>
+      <find>dataV</find>
+      <find>dataset</find>
+      <find>datase</find>
+      <find>datas</find>
       <find>data</find>
-      <find>onInputChange</find>
-      <find>searchText</find>
-      <find>state</find>
-      <find>value={this.state.searchText}</find>
-      <find>Search name</find>
-      <find>name</find>
-      <find>className</find>
-      <find>DEAL</find>
-      <find>FACE</find>
-      <find>filterTraderMethod</find>
-      <find>cosole</find>
-      <find>moment</find>
-      <find>r</find>
-      <find>ra</find>
-      <find>ram</find>
-      <find>ramd</find>
-      <find>ramda</find>
-      <find>Trader</find>
-      <find>id</find>
-      <find>香港</find>
+      <find>map</find>
+      <find>const R = require('ramda')</find>
+      <find>pu</find>
+      <find>push</find>
+      <find>c</find>
+      <find>han</find>
+      <find>hand</find>
+      <find>handl</find>
+      <find>handle</find>
+      <find>handleC</find>
+      <find>handleCh</find>
+      <find>handleChang</find>
+      <find>handleChange</find>
+      <find>p</find>
+      <find>DataSet</find>
     </findStrings>
     <replaceStrings>
       <replace>red</replace>
@@ -186,57 +145,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/AllocateChart.css" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Allocate.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/MyDatePicker.js" />
-        <option value="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealDatePicker.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/TraderRankChart.css" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/AllocateChart.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/TraderRankChart.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/TraderPropsModal.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/TraderRank.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/AllocateMomentem/Allocate.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Institute/InstituteRankChart.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Trader/TraderTsChart.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Institute/InstitutePropsModal.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Institute/InsTsChart.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/components/Trade/MarketMakerTrade/Orders.js" />
-        <option value="$PROJECT_DIR$/src/components/Market/HidenCredit/HidenDatePicker.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/SaleMain.js" />
-        <option value="$PROJECT_DIR$/china.json" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Bank/ChinaChart.css" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Bank/ChinaChart.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Relative/RelativeBubbleChart.css" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Bank/TraderBankTsChart.js" />
-        <option value="$PROJECT_DIR$/src/router.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/IndexPage.js" />
-        <option value="$PROJECT_DIR$/.eslintrc" />
-        <option value="$PROJECT_DIR$/src/components/EnsureLoggedInContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/Market/BondDeal/BondDealMain.js" />
-        <option value="$PROJECT_DIR$/src/components/Market/BondLend/BondLendMain.js" />
-        <option value="$PROJECT_DIR$/src/components/Market/Bp/BpMain.js" />
-        <option value="$PROJECT_DIR$/src/components/Market/HidenCredit/HidenCreditMain.js" />
-        <option value="$PROJECT_DIR$/src/components/Market/Issue/Issue.js" />
-        <option value="$PROJECT_DIR$/src/components/Market/Issue/IssueDatePicker.js" />
-        <option value="$PROJECT_DIR$/src/components/Market/MarketMaker/MarketMakerDealChart.js" />
-        <option value="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealMain.js" />
-        <option value="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTsBar.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Position/Position.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Report/PositionPie.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/BondLend/BondLendArea.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/Issue/IssueMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/Issue/QualificationTs.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/PureBondIndex/PureBondIndexMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/Issue/EmotionTs.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/Future/FuturePosition.css" />
+        <option value="$PROJECT_DIR$/src/components/Market/Future/FutureMain.js" />
         <option value="$PROJECT_DIR$/src/components/Tools/Report/ProfitChart.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Bank/BankMain.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Institute/InstituteRank.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Relative/RelativeBubbleChart.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Trader/TraderRank.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/SPositions/BPMPosition.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/ToolMain.js" />
-        <option value="$PROJECT_DIR$/src/components/Trade/MarketMakerTrade/MMMain.js" />
-        <option value="$PROJECT_DIR$/src/components/TradeSystem/LimitQuotes.js" />
-        <option value="$PROJECT_DIR$/src/components/TradeSystem/MarketQuotes.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/Future/FuturePosition.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/Future/MainPosition.js" />
+        <option value="$PROJECT_DIR$/src/components/Layout/MainMenu.js" />
+        <option value="$PROJECT_DIR$/src/router.js" />
+        <option value="$PROJECT_DIR$/src/components/Macro/MacroReview/ReviewMain.css" />
+        <option value="$PROJECT_DIR$/src/components/Macro/MacroReview/ComsumReturnAreaChart.css" />
+        <option value="$PROJECT_DIR$/src/components/Macro/MacroReview/SignalChart.css" />
+        <option value="$PROJECT_DIR$/src/components/Macro/MacroReview/DrawDownChart.css" />
+        <option value="$PROJECT_DIR$/src/components/Macro/MacroReview/ComsumReturnAreaChart.js" />
+        <option value="$PROJECT_DIR$/src/components/Macro/MacroReview/DrawDownChart.js" />
+        <option value="$PROJECT_DIR$/src/components/Macro/MacroReview/SignalChart.js" />
+        <option value="$PROJECT_DIR$/src/components/Macro/MacroReview/ReviewDetail.js" />
+        <option value="$PROJECT_DIR$/src/components/Tools/SPositions/PosMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Tools/SPositions/DealPosition.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/MarketMaker/MarketMakerMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/MarketMaker/XBondCounter/XBondCounterMain.css" />
+        <option value="$PROJECT_DIR$/src/components/Market/MarketMaker/XBondCounter/XBondCounterMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTsBar1.js" />
+        <option value="$PROJECT_DIR$/src/components/Macro/Predit/PreditMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Macro/MacroMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Macro/Predit/XBondIndex/XondIndexMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTsBar.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTsBarNew.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveCurveChart.css" />
+        <option value="$PROJECT_DIR$/src/components/Market/Issue/Issue.js" />
+        <option value="$PROJECT_DIR$/src/components/Layout/MainContent.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/BigNews/BigNewsChart.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/BigNews/BigNewsMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTab.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealBarNew.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/Issue/Abnormal.js" />
+        <option value="$PROJECT_DIR$/src/components/Macro/MacroReview/ReviewMain.js" />
         <option value="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealBarChart.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Sales/Relative/RelativeMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveRankChart.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveCurveChart.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveChartAll.css" />
+        <option value="$PROJECT_DIR$/.eslintrc" />
+        <option value="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealMainNew.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveCurve.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/MarketMain.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveChartAll.js" />
+        <option value="$PROJECT_DIR$/src/components/Market/CurveMat/AbsoluteCurve.js" />
       </list>
     </option>
   </component>
@@ -250,9 +209,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-1608" />
     <option name="y" value="-8" />
-    <option name="width" value="1554" />
+    <option name="width" value="1616" />
     <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -272,6 +231,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -334,63 +294,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trade-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trade-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sales" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trade-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trade-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sales" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Relative" />
+              <option name="myItemId" value="Market" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -415,16 +319,19 @@
               <option name="myItemId" value="Market" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CurveMat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../trade-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -432,18 +339,24 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="D:\workspace\交易接口\trade-view\node_modules\eslint" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.selected.package.jscs" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\交易接口\trade-view\src\components\Market\SecondMarketDeal" />
+      <recent name="D:\workspace\交易接口\trade-view\src\components\Tools\TodoAlarm" />
+      <recent name="D:\workspace\交易接口\trade-view\src\components\Tools" />
       <recent name="D:\workspace\交易接口\trade-view\src\components\Tools\Sales\Institute" />
       <recent name="D:\workspace\交易接口\trade-view\src\components\Tools\Sales\Institude" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\交易接口\trade-view\src\components\Market\BigNews" />
       <recent name="D:\workspace\交易接口\trade-view\src\components\Tools\Sales\AllocateMomentem" />
       <recent name="D:\workspace\交易接口\trade-view\src\components\Tools\Sales\Trader" />
       <recent name="D:\workspace\交易接口\trade-view\src\components\Market" />
       <recent name="D:\workspace\交易接口\trade-view\src\components\Tools\Positions" />
-      <recent name="D:\workspace\交易接口\trade-view\src\components\Tools" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -632,19 +545,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1554" height="916" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1608" y="-8" width="1616" height="916" extended-state="6" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21529563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41709185" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2857143" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2021419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37244898" sideWeight="0.5025707" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18072289" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28954083" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1579652" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37244898" sideWeight="0.4974293" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -652,31 +563,11 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41709185" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29591838" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20481928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1579652" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -686,426 +577,372 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="25" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Institute/InsTsChart.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Market/MarketMaker/MarketScore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="376">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Trade/MarketMakerTrade/MMHQ.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTsBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        <state relative-caret-position="164">
+          <caret line="93" column="126" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="126" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Trade/MarketMakerTrade/OrderIng.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Tools/XBond/XBondAmtChart.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="52">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Trade/MarketMakerTrade/Orders.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Tools/XBond/XBondAmtChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/Issue/EmotionTs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <caret line="125" column="12" lean-forward="false" selection-start-line="125" selection-start-column="12" selection-end-line="127" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Institute/InstituteRankChart.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Market/Issue/QualificationTs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="338">
+          <caret line="64" column="12" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="101" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Trade/TradeMain.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Market/MarketMaker/MarketMakerDealChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/Issue/IssueMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/Issue/IssueChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tools/Report/ReportMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tools/Report/ProfitReason.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/HidenCredit/HidenDatePicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/SaleMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/g2/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-884">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/g2/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/components/Tools/Position/Position.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="-467">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/china.json">
+    <entry file="file://$PROJECT_DIR$/src/components/Market/BondDeal/BondDealOptions.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="0" column="1373" lean-forward="false" selection-start-line="0" selection-start-column="1373" selection-end-line="0" selection-end-column="1373" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Trader/TraderRankChart.css">
+    <entry file="file://$PROJECT_DIR$/src/components/Market/BondDeal/BondDealOptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/Future/FuturePosition.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/Issue/Issue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="71" column="32" lean-forward="true" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/HidenCredit/HidenCreditMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="151" column="41" lean-forward="true" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/MainContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/BigNews/BigNewsChart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="19" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Bank/ChinaChart.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Market/BigNews/BigNewsMain.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="624">
+          <caret line="55" column="39" lean-forward="false" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Bank/ChinaChart.css">
+    <entry file="file://$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="39" column="62" lean-forward="false" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealBarNew.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="19" />
+          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Relative/RelativeBubbleChart.css">
+    <entry file="file://$PROJECT_DIR$/src/components/Market/Issue/Abnormal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Macro/MacroReview/ReviewMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="32" column="63" lean-forward="true" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealBarChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/CurveMat/CurveMatChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1430">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveCurveChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveRankChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="30" column="69" lean-forward="false" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveCurveChart.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveChartAll.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/AllocateMomentem/AllocateChart.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Tools/SPositions/DealPosition.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="259">
+          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Trader/TraderRankChart.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Market/Future/FuturePosition.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="43" />
+        <state relative-caret-position="261">
+          <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Trader/TraderPropsModal.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Macro/MacroReview/DrawDownChart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Trader/TraderTsChart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Bank/TraderBankTsChart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../python/page monitor/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/IndexPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="52">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="260">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/EnsureLoggedInContainer.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Macro/MacroReview/ComsumReturnAreaChart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state relative-caret-position="130">
+          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/CurveMat/CurveMatMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/Bp/ChangeBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="18" column="69" lean-forward="false" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealMainNew.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/MarketMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
           <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/BondLend/BondLendMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/HidenCredit/HidenCreditMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="161" column="17" lean-forward="true" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/Bp/BpMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/Issue/Issue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/MarketMaker/MarketMakerDealChart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
+            <element signature="e#69#97#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/Issue/IssueDatePicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTsBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Report/ProfitChart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Report/PositionPie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="82" column="29" lean-forward="true" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-779">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Position/Position.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="155">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Market/BondDeal/BondDealMain.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="39" />
+        <state relative-caret-position="-1924">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/BondLend/BondLendMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-468">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="50" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/Future/MainPosition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="203" column="22" lean-forward="true" selection-start-line="203" selection-start-column="22" selection-end-line="203" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/Future/FutureMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealDatePicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveCurve.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="157" column="8" lean-forward="false" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tools/Report/ProfitChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="79" column="18" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="79" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveChartAll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2158">
+          <caret line="87" column="33" lean-forward="false" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Relative/RelativeBubbleChart.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Market/CurveMat/AbsoluteCurve.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Institute/InstituteRank.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="149" column="5" lean-forward="true" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Trader/TraderRank.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="148" column="5" lean-forward="true" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/SPositions/BPMPosition.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/ToolMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-            <element signature="e#96#138#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Bank/BankMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="84" column="55" lean-forward="true" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Trade/MarketMakerTrade/MMMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TradeSystem/LimitQuotes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TradeSystem/MarketQuotes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        <state relative-caret-position="285">
+          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealBarChart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Sales/Relative/RelativeMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>

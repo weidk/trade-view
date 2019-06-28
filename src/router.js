@@ -38,6 +38,11 @@ function RouterConfig({ history, app }) {
     component: () => import('./components/Tools/ToolMain'),
   });
 
+  const Macro = dynamic({
+    app,
+    component: () => import('./components/Macro/MacroMain'),
+  });
+
   const MarketMain = dynamic({
     app,
     component: () => import('./components/Market/MarketMain'),
@@ -49,6 +54,7 @@ function RouterConfig({ history, app }) {
         <Route exact path="/market" component={MarketMain} />
         <Route exact path="/trade" component={props => requireAuth(TradeSystem, props, 1)} />
         <Route exact path="/tools" component={props => requireAuth(ToolsMain, props, 0)} />
+        <Route exact path="/macro" component={Macro} />
       </Switch>
     </Router>
   );

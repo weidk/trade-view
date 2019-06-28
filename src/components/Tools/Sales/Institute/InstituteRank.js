@@ -74,7 +74,7 @@ class InstituteRank extends React.Component {
         });
       });
     } catch (error) {
-      console.log('error: ', error);
+      // console.log('error: ', error);
     }
   }
 
@@ -91,7 +91,7 @@ class InstituteRank extends React.Component {
   }
   showModal = (ev) => {
     try {
-      const tradername = ev.data._origin.USERNAME;
+      const tradername = ev.data._origin.USERNAME;/* eslint no-underscore-dangle: 0 */
       fetch('/api/instituteprops', {
         method: 'POST',
         body: JSON.stringify({ start: this.state.start, end: this.state.end, name: tradername }),
@@ -108,13 +108,13 @@ class InstituteRank extends React.Component {
         visible: true,
       });
     } catch (error) {
-      console.log('error: ', error);
+      // console.log('error: ', error);
     }
   }
 
   showInterestTsModal = (ev) => {
     try {
-      const tradername = ev.data._origin.USERNAME;
+      const tradername = ev.data._origin.USERNAME;/* eslint no-underscore-dangle: 0 */
       fetch('/api/inssaleallocateamtinterest', {
         method: 'POST',
         body: JSON.stringify({ name: tradername }),
@@ -127,13 +127,13 @@ class InstituteRank extends React.Component {
         });
       });
     } catch (error) {
-      console.log('error: ', error);
+      // console.log('error: ', error);
     }
   }
 
   showCreditTsModal = (ev) => {
     try {
-      const tradername = ev.data._origin.USERNAME;
+      const tradername = ev.data._origin.USERNAME;/* eslint no-underscore-dangle: 0 */
       fetch('/api/inssaleallocateamtcredit', {
         method: 'POST',
         body: JSON.stringify({ name: tradername }),
@@ -146,7 +146,7 @@ class InstituteRank extends React.Component {
         });
       });
     } catch (error) {
-      console.log('error: ', error);
+      // console.log('error: ', error);
     }
   }
 

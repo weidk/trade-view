@@ -1,7 +1,7 @@
 import React from 'react';
 import fetch from 'dva/fetch';
 import moment from 'moment';
-import { Select, Input, Modal, Spin, Button, Row, Col } from 'antd';
+import { Input, Modal, Spin, Button, Row, Col } from 'antd';
 import styles from './HidenCreditMain.css';
 import HidenDatePicker from './HidenDatePicker';
 import HidenDateTable from './HidenDateTable';
@@ -10,7 +10,7 @@ import HidenCreditHistoryTable from './HidenCreditHistoryTable';
 const ExportJsonExcel = require('js-export-excel');
 
 const Search = Input.Search;
-const Option = Select.Option;
+// const Option = Select.Option;
 
 
 class HidenCreditMain extends React.Component {
@@ -54,7 +54,7 @@ class HidenCreditMain extends React.Component {
         });
       });
     } catch (error) {
-      console.log('error: ', error);
+      // console.log('error: ', error);
     }
   }
 
@@ -82,14 +82,14 @@ class HidenCreditMain extends React.Component {
         },
       }).then((response) => {
         response.json().then((ds) => {
-          console.log(ds);
+          // console.log(ds);
           this.setState({
             tableData: ds,
             loading: false });
         });
       });
     } catch (error) {
-      console.log('error: ', error);
+      // console.log('error: ', error);
       this.setState({
         loading: false });
     }
@@ -110,21 +110,21 @@ class HidenCreditMain extends React.Component {
   }
 
   render() {
-    const selectAfter = (
-      <Select
-        defaultValue=".IB"
-        style={{ width: 80 }}
-        onChange={(value) => {
-          this.setState({
-            market: value,
-          });
-        }}
-      >
-        <Option value=".IB">.IB</Option>
-        <Option value=".SH">.SH</Option>
-        <Option value=".SZ">.SZ</Option>
-      </Select>
-    );
+    // const selectAfter = (
+    //   <Select
+    //     defaultValue=".IB"
+    //     style={{ width: 80 }}
+    //     onChange={(value) => {
+    //       this.setState({
+    //         market: value,
+    //       });
+    //     }}
+    //   >
+    //     <Option value=".IB">.IB</Option>
+    //     <Option value=".SH">.SH</Option>
+    //     <Option value=".SZ">.SZ</Option>
+    //   </Select>
+    // );
     return (
       <div className={styles.normal}>
         <Row>
@@ -158,7 +158,7 @@ class HidenCreditMain extends React.Component {
                     });
                   });
                 } catch (error) {
-                  console.log('error: ', error);
+                  // console.log('error: ', error);
                 }
               }}
             />

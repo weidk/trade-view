@@ -119,7 +119,7 @@ class BondDealMain extends React.Component {
       }
     } catch (error) {
       this.setState({ loading: false });
-      console.log('error: ', error);
+      // console.log('error: ', error);
     }
   };
   calAmt = (values) => { return R.sum(R.pluck('DEALTOTALFACEVALUE')(values)) / 10000; }

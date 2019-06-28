@@ -48,7 +48,7 @@ class LimitQuotes extends React.Component {
       }
       this.setState({ indexData });
     } catch (err) {
-      console.log(err);
+      // console.log(err);
     }
   }
 

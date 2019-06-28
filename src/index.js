@@ -1,14 +1,14 @@
 import dva from 'dva';
-import createHistory from 'history/createBrowserHistory';
+// import createHistory from 'history/createBrowserHistory';
 import 'semantic-ui-css/semantic.min.css';
-import { message } from 'antd';
+// import { message } from 'antd';
 import 'antd/dist/antd.css';
 import './index.css';
 import router from './router';
 
 // import example from './models/example';
 
-const ERROR_MSG_DURATION = 3; // 3 秒
+// const ERROR_MSG_DURATION = 3; // 3 秒
 
 // 1. Initialize
 // const app = dva({

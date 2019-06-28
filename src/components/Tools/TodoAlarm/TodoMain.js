@@ -2,27 +2,18 @@ import React from 'react';
 import { Button } from 'antd';
 import fetch from 'dva/fetch';
 import request from '../../../utils/request';
-import styles from './Position.css';
-import PositionTable from './PostionTable';
-import PositionModal from './PositionModal';
+import styles from './TodoMain.css';
+import TodoTable from './TodoTable';
+import TodoModal from './TodoModal';
 
 const R = require('ramda');
 
-const formatDate = (now) => {
-  const year = now.getFullYear();
-  const month = now.getMonth() + 1;
-  const date = now.getDate();
-  return `${year}-${month}-${date}`;
-};
-
-class Position extends React.Component {
+class TodoMain extends React.Component {
   constructor() {
     super();
     this.state = {
       data: [],
       filterTraders: [],
-      filterDate: [],
-      filterCodes: [],
     };
   }
   componentDidMount() {
@@ -39,33 +30,17 @@ class Position extends React.Component {
       filterTrader.forEach(d => traderList.push({ text: d, value: d }));
       this.setState({ filterTraders: traderList,
       });
-
-      // const tempTraderSet = new Set();
-      // data.forEach(d => tempTraderSet.add({ text: d.trader, value: d.trader }));
-      // const tempTraderArr = Array.from(tempTraderSet);
-
-      const tempDateSet = new Set();
-      data.forEach(d => tempDateSet.add({ text: formatDate(new Date(d.date)),
-        value: d.date }));
-      const tempDateArr = Array.from(tempDateSet);
-
-      const tempCodeSet = new Set();
-      data.forEach(d => tempCodeSet.add({ text: d.bondcode, value: d.bondcode }));
-      const tempCodeArr = Array.from(tempCodeSet);
-
-      this.setState({
-        filterDate: Array.from(tempDateArr),
-        filterCodes: Array.from(tempCodeArr),
-      });
     }
   };
 
 
   createHandler = (values) => {
     try {
-      fetch('/api/postposition', {
+      const values2 = values;
+      values2.date = values.date.format('YYYY-MM-DD HH:mm:ss').toString();
+      fetch('/api/posttodo', {
         method: 'POST',
-        body: JSON.stringify(values),
+        body: JSON.stringify(values2),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -76,7 +51,7 @@ class Position extends React.Component {
   };
 
   fetchData = () => {
-    const pms = request('/api/position');
+    const pms = request('/api/todo');
     pms.then((datas) => {
       this.setState({ data: datas.data });
       this.getFilters();
@@ -85,7 +60,7 @@ class Position extends React.Component {
 
   deleteHandle = (values) => {
     try {
-      fetch('/api/deleteposition', {
+      fetch('/api/deletetodo', {
         method: 'POST',
         body: JSON.stringify(values),
         headers: {
@@ -104,19 +79,17 @@ class Position extends React.Component {
     return (
       <div className={styles.normal}>
         <div className={styles.create}>
-          <PositionModal record={{}} onOk={this.createHandler} >
-            <Button type="primary">新建持仓</Button>
-          </PositionModal>
+          <TodoModal record={{}} onOk={this.createHandler} >
+            <Button type="primary">新建事项</Button>
+          </TodoModal>
         </div>
-        <PositionTable
+        <TodoTable
           fetchedData={this.state.data} deleteData={this.deleteHandle}
           traders={this.state.filterTraders}
-          dates={this.state.filterDate}
-          codes={this.state.filterCodes}
         />
       </div>
     );
   }
 }
 
-export default Position;
+export default TodoMain;

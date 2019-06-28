@@ -21,6 +21,7 @@ class MainMenu extends React.Component {
             <Menu.Item key="/"><Link to="/">主页</Link></Menu.Item>
             <Menu.Item key="/tools"><Link to="tools">工具</Link></Menu.Item>
             <Menu.Item key="/market"><Link to="market">市场</Link></Menu.Item>
+            <Menu.Item key="/macro"><Link to="macro">宏观</Link></Menu.Item>
             <Menu.Item key="/trade"><Link to="trade">交易</Link></Menu.Item>
           </Menu>
         </Header>

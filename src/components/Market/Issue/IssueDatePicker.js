@@ -14,7 +14,7 @@ class IssueDatePicker extends React.Component {
         <a>选择发行区间 ：</a>
         <RangePicker
           onChange={this.props.onChange}
-          defaultValue={[moment().subtract(10, 'days'),moment()]}
+          defaultValue={[moment().subtract(10, 'days'), moment()]}
           format={dateFormat}
         />
       </div>

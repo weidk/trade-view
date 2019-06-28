@@ -6,7 +6,7 @@ import styles from './DealTsBar.css';
 
 const ExportJsonExcel = require('js-export-excel');
 
-class DealTsBar extends React.Component {
+class DealTsBarNew extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -15,14 +15,14 @@ class DealTsBar extends React.Component {
   }
 
   componentDidMount() {
-    this.fetchData(this.props.ins, this.props.type);
+    this.fetchData(this.props.ins, this.props.type, this.props.term);
   }
 
-  fetchData = (insdata, typedata) => {
+  fetchData = (insdata, typedata, termdata) => {
     try {
-      fetch('/api/marketdealts', {
+      fetch('/api/marketdealtsnew', {
         method: 'POST',
-        body: JSON.stringify({ ins: insdata, type: typedata }),
+        body: JSON.stringify({ ins: insdata, type: typedata, term: termdata }),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -36,10 +36,9 @@ class DealTsBar extends React.Component {
     }
   }
 
-
   writeToExcel = () => {
     const option = {};
-    option.fileName = `${this.props.ins}_${this.props.type}数据`;
+    option.fileName = `${this.props.ins}_${this.props.type}_${this.props.term}数据`;
     option.datas = [
       {
         sheetData: this.state.chartdata,
@@ -49,6 +48,7 @@ class DealTsBar extends React.Component {
     const toExcel = new ExportJsonExcel(option);
     toExcel.saveExcel();
   }
+
 
   render() {
     const data = this.state.chartdata;
@@ -97,4 +97,4 @@ class DealTsBar extends React.Component {
   }
 }
 
-export default DealTsBar;
+export default DealTsBarNew;
