@@ -47,6 +47,12 @@ function RouterConfig({ history, app }) {
     app,
     component: () => import('./components/Market/MarketMain'),
   });
+
+  const Credit = dynamic({
+    app,
+    component: () => import('./components/Credit/CreditMain'),
+  });
+
   return (
     <Router history={history}>
       <Switch>
@@ -55,6 +61,7 @@ function RouterConfig({ history, app }) {
         <Route exact path="/trade" component={props => requireAuth(TradeSystem, props, 1)} />
         <Route exact path="/tools" component={props => requireAuth(ToolsMain, props, 0)} />
         <Route exact path="/macro" component={Macro} />
+        <Route exact path="/credit" component={Credit} />
       </Switch>
     </Router>
   );

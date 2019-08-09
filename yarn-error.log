@@ -1,8 +1,8 @@
 Arguments: 
-  D:\Program Files\nodejs\node.exe D:\Program Files (x86)\Yarn\bin\yarn.js
+  D:\Program Files\nodejs\node.exe C:\Users\wdk2\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
 
 PATH: 
-  C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Microsoft MPI\Bin\;D:\Oracle32\instantclient_11_1;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\Program Files\TortoiseGit\bin;D:\Program Files\Anaconda3;D:\Program Files\Anaconda3\Scripts;D:\Program Files\Anaconda3\Library\bin;D:\Program Files\nodejs\;D:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;D:\ORACLE\instantclient_11_2;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\Program Files\websocketd;C:\ProgramData\chocolatey\bin;D:\Program Files (x86)\putty-0.70cn;C:\Program Files (x86)\dotnet\;D:\Program Files\Redis;D:\Go\bin;D:\Java\bin;D:\Java\jre\bin;D:\Program Files\commons-logging-1.2;D:\Program Files\apache-maven-3.6.0\bin;D:\Program Files (x86)\File Viewer Lite\lib\magick;C:\tools\Anaconda2;C:\tools\Anaconda2\Library\mingw-w64\bin;C:\tools\Anaconda2\Library\usr\bin;C:\tools\Anaconda2\Library\bin;C:\tools\Anaconda2\Scripts;D:\gradle-5.2.1\bin;D:\Program Files\R\R-3.5.3\bin;D:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.12\sbin;D:\Program Files\MongoDB\Server\3.4\bin;D:\spring-2.1.2.RELEASE\bin;D:\Program Files\Git\cmd;D:\Program Files (x86)\Graphviz2.38\bin;D:\Program Files (x86)\Yarn\bin\;D:\Wind\Wind.NET.Client\WindNET\bin\;C:\Users\wdk2\AppData\Roaming\npm;D:\Program Files\Microsoft VS Code\bin;C:\Users\wdk2\AppData\Local\.meteor;C:\Users\wdk2\.dotnet\tools;C:\Users\wdk2\go\bin;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3\bin;;D:\Program Files\Docker Toolbox;C:\Users\wdk2\AppData\Local\Yarn\bin
+  C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Microsoft MPI\Bin\;D:\Oracle32\instantclient_11_1;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\Program Files\TortoiseGit\bin;D:\Program Files\Anaconda3;D:\Program Files\Anaconda3\Scripts;D:\Program Files\Anaconda3\Library\bin;D:\Program Files\nodejs\;D:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;D:\ORACLE\instantclient_11_2;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\Program Files\websocketd;C:\ProgramData\chocolatey\bin;D:\Program Files (x86)\putty-0.70cn;C:\Program Files (x86)\dotnet\;D:\Program Files\Redis;D:\Go\bin;D:\Java\bin;D:\Java\jre\bin;D:\Program Files\commons-logging-1.2;D:\Program Files\apache-maven-3.6.0\bin;D:\Program Files (x86)\File Viewer Lite\lib\magick;C:\tools\Anaconda2;C:\tools\Anaconda2\Library\mingw-w64\bin;C:\tools\Anaconda2\Library\usr\bin;C:\tools\Anaconda2\Library\bin;C:\tools\Anaconda2\Scripts;D:\gradle-5.2.1\bin;D:\Program Files\R\R-3.5.3\bin;D:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.12\sbin;D:\Program Files\MongoDB\Server\3.4\bin;D:\spring-2.1.2.RELEASE\bin;D:\Program Files\Git\cmd;D:\Program Files (x86)\Graphviz2.38\bin;C:\Users\wdk2\AppData\Roaming\npm;D:\Wind\Wind.NET.Client\WindNET\bin\;C:\Users\wdk2\AppData\Roaming\npm;D:\Program Files\Microsoft VS Code\bin;C:\Users\wdk2\AppData\Local\.meteor;C:\Users\wdk2\.dotnet\tools;C:\Users\wdk2\go\bin;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3\bin;;D:\Program Files\Docker Toolbox
 
 Yarn version: 
   1.16.0
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: connect ETIMEDOUT 104.16.17.35:443
+  Error: connect ETIMEDOUT 104.16.22.35:80
       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
 
 npm manifest: 
