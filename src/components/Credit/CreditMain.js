@@ -5,6 +5,7 @@ import MainContent from '../Layout/MainContent';
 import styles from './CreditMain.css';
 import HidenCreditMain from '../Market/HidenCredit/HidenCreditMain';
 import CityMain from './City/CityMain';
+import TurnOverMain from './TurnOver/TurnOverMain';
 import IndustryMain from './Industry/IndustryMain';
 
 const TabPane = Tabs.TabPane;
@@ -19,6 +20,7 @@ class CreditMain extends React.Component {
               <TabPane tab="城投分析" key="1" ><CityMain /></TabPane>
               <TabPane tab="行业分析" key="2" ><IndustryMain /></TabPane>
               <TabPane tab="隐含评级" key="3" ><HidenCreditMain /></TabPane>
+              <TabPane tab="信用换手" key="4" ><TurnOverMain /></TabPane>
             </Tabs>
           </MainContent>
         </div>

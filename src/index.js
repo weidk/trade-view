@@ -21,7 +21,6 @@ import router from './router';
 // 1. Initialize
 const app = dva();
 
-// app.model(quotes);
 
 // 2. Plugins
 // app.use(createLoading());

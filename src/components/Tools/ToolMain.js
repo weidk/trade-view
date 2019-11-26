@@ -3,7 +3,7 @@ import { Tabs } from 'antd';
 // import styles from './ToolMain.css';
 import MainMenu from '../Layout/MainMenu';
 import MainContent from '../Layout/MainContent';
-import Position from './Position/Position';
+import PositionMain from './Position/PositionMain';
 import PosMain from './SPositions/PosMain';
 import ReportMain from './Report/ReportMain';
 // import SysMonitorMain from './SystemMonitor/SysMonitorMain';
@@ -20,7 +20,7 @@ class ToolMain extends React.Component {
         <div>
           <MainContent >
             <Tabs defaultActiveKey="1" tabPosition="left">
-              <TabPane tab="报头寸" key="1"><Position /></TabPane>
+              <TabPane tab="报头寸" key="1"><PositionMain /></TabPane>
               <TabPane tab="现券持仓" key="2"><PosMain /></TabPane>
               <TabPane tab="投资报表" key="3"><ReportMain /></TabPane>
               <TabPane tab="销售报表" key="4"><SaleMain /></TabPane>

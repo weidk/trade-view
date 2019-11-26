@@ -45,12 +45,20 @@ function RouterConfig({ history, app }) {
 
   const MarketMain = dynamic({
     app,
+    models: () => [
+      import('./models/brokerhq'),
+    ],
     component: () => import('./components/Market/MarketMain'),
   });
 
   const Credit = dynamic({
     app,
     component: () => import('./components/Credit/CreditMain'),
+  });
+
+  const News = dynamic({
+    app,
+    component: () => import('./components/News/NewsMain'),
   });
 
   return (
@@ -62,6 +70,7 @@ function RouterConfig({ history, app }) {
         <Route exact path="/tools" component={props => requireAuth(ToolsMain, props, 0)} />
         <Route exact path="/macro" component={Macro} />
         <Route exact path="/credit" component={Credit} />
+        <Route exact path="/news" component={News} />
       </Switch>
     </Router>
   );
