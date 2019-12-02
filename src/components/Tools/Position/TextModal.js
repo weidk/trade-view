@@ -1,4 +1,3 @@
-/* eslint-disable no-useless-escape,no-empty */
 import React from 'react';
 import { Drawer, Input, Row, Col, Button, Select, Table, message } from 'antd';
 import { EditableFormRow, EditableCell } from '../../Utils/EditableCell';
@@ -63,6 +62,7 @@ class TextModal extends React.Component {
       trader: '',
       dataSource: [],
       nonbondText: '',
+      check: false,
     };
   }
 
@@ -85,59 +85,72 @@ class TextModal extends React.Component {
   RexText = () => {
     if (this.state.trader === '') {
       message.error('请选择交易员姓名');
-    }
-    const raw = this.state.rowtext;
-    try {
+    } else {
+      const raw = this.state.rowtext;
+      try {
       // eslint-disable-next-line no-unused-vars
-      let rawList = _.split(raw, /[\r\n]/);
-      rawList = _.map(rawList, _.trim);
-      const newList = [];
-      let key = 0;
-      rawList = rawList.forEach((tempStr) => {
-        const newtempStr = tempStr.replace(/\s+/g, ' '); // 将多个空格替换成一个空格
-        const strList = _.split(newtempStr, /\s/); // 按空格分割为数组
-        const bondcode = strList[0];
-        let buyamt = _.find(strList, o => o.indexOf('买') !== -1);
-        if (buyamt !== undefined) {
-          buyamt = buyamt.match(/\d+\.?\d*/)[0];
+        let rawList = _.split(raw, /[\r\n]/);
+        rawList = _.map(rawList, _.trim);
+        const newList = [];
+        let key = 0;
+        rawList = rawList.forEach((tempStr) => {
+          const newtempStr = tempStr.replace(/\s+/g, ' '); // 将多个空格替换成一个空格
+          const strList = _.split(newtempStr, /\s/); // 按空格分割为数组
+          const bondcode = strList[0];
+          let buyamt = _.find(strList, o => o.indexOf('买') !== -1);
+          if (buyamt !== undefined) {
+            buyamt = buyamt.match(/\d+\.?\d*/)[0];
+          } else {
+            buyamt = 0;
+          }
+          let sellamt = _.find(strList, o => o.indexOf('卖') !== -1);
+          if (sellamt !== undefined) {
+            sellamt = sellamt.match(/\d+\.?\d*/)[0];
+          } else {
+            sellamt = 0;
+          }
+          let frozeamt = _.find(strList, o => o.indexOf('冻') !== -1);
+          if (frozeamt !== undefined) {
+            frozeamt = frozeamt.match(/\d+\.?\d*/)[0];
+          } else {
+            frozeamt = 0;
+          }
+          const netamt = (sellamt - buyamt).toFixed(2);
+          let note = newtempStr.match(/(\(|（).*(）|\))/);
+          // let note = newtempStr.match(/(\(|（)(.+?)\)/g);
+          if (note !== null) {
+            note = note[0].replace(/(\(|（|）|\))/g, '');
+          } else {
+            note = '-';
+          }
+          if (bondcode !== '') {
+            key += 1;
+            newList.push({ key, trader: this.state.trader, bondcode, buyamt, sellamt, netamt, frozeamt, note });
+          }
+        });
+        const nonbondTextList = _.split(this.state.nonbondText, /[\r\n]/);
+        nonbondTextList.forEach((text) => {
+          const tt = text.replace(/\s+/, '');
+          if (tt !== '') {
+            key += 1;
+            newList.push({ key, trader: this.state.trader, nonbond: tt });
+          }
+        });
+        // newList.push({ trader: this.state.trader, nonbond: this.state.nonbondText });
+        this.setState({ dataSource: newList });
+        if (newList.length > 0) {
+          if (newList[0].trader !== '') {
+            this.setState({ check: true });
+          } else {
+            message.error('请选择交易员！');
+          }
         } else {
-          buyamt = 0;
+          this.setState({ check: false });
         }
-        let sellamt = _.find(strList, o => o.indexOf('卖') !== -1);
-        if (sellamt !== undefined) {
-          sellamt = sellamt.match(/\d+\.?\d*/)[0];
-        } else {
-          sellamt = 0;
-        }
-        let frozeamt = _.find(strList, o => o.indexOf('冻') !== -1);
-        if (frozeamt !== undefined) {
-          frozeamt = frozeamt.match(/\d+\.?\d*/)[0];
-        } else {
-          frozeamt = 0;
-        }
-        const netamt = (sellamt - buyamt).toFixed(2);
-        let note = newtempStr.match(/(\(|\（).*(\）|\))/);
-        if (note !== null) {
-          note = note[0].replace(/[\(\（\）\)]/g, '');
-        } else {
-          note = '-';
-        }
-        if (bondcode !== '') {
-          key += 1;
-          newList.push({ key, trader: this.state.trader, bondcode, buyamt, sellamt, netamt, frozeamt, note });
-        }
-      });
-      const nonbondTextList = _.split(this.state.nonbondText, /[\r\n]/);
-      nonbondTextList.forEach((text) => {
-        const tt = text.replace(/\s+/, '');
-        if (tt !== '') {
-          key += 1;
-          newList.push({ key, trader: this.state.trader, nonbond: tt });
-        }
-      });
-      // newList.push({ trader: this.state.trader, nonbond: this.state.nonbondText });
-      this.setState({ dataSource: newList });
-    } catch (error) {}
+      } catch (error) {
+        console.log(error);
+      }
+    }
   }
 
   render() {
@@ -170,7 +183,10 @@ class TextModal extends React.Component {
           title="请将原始文本粘贴在左侧"
           visible={this.props.visible}
           // onOk={this.props.handleOk}
-          onClose={this.props.handleCancel}
+          onClose={() => {
+            this.setState({ check: false });
+            this.props.handleCancel();
+          }}
           placement="top"
           closable={false}
           height="600"
@@ -210,25 +226,31 @@ class TextModal extends React.Component {
               />
             </Col>
           </Row>
-          <div
-            style={{
-              position: 'absolute',
-              left: 0,
-              bottom: 0,
-              width: '100%',
-              borderTop: '1px solid #e9e9e9',
-              padding: '10px 16px',
-              background: '#fff',
-              textAlign: 'right',
-            }}
-          >
-            <Button onClick={this.RexText} style={{ marginRight: 8 }}>
+          <Row gutter={16}>
+            <Col span={8}>
+              <Button type="primary" block onClick={this.RexText} style={{ marginRight: 8 }}>
               识别
-            </Button>
-            <Button onClick={() => this.props.handleOk(this.state.dataSource)} type="primary">
+              </Button>
+            </Col>
+            <Col span={8} />
+            <Col span={8}>
+              <Button
+                type="danger"
+                block
+                disabled={!this.state.check}
+                onClick={() => {
+                  if (this.state.check) {
+                    this.setState({ check: false });
+                    this.props.handleOk(this.state.dataSource);
+                  } else {
+                    message.error('清先解析文本！');
+                  }
+                }}
+              >
               提交
-            </Button>
-          </div>
+              </Button>
+            </Col>
+          </Row>
         </Drawer>
       </div>
     );

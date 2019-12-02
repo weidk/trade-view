@@ -7,6 +7,7 @@ import HidenCreditMain from '../Market/HidenCredit/HidenCreditMain';
 import CityMain from './City/CityMain';
 import TurnOverMain from './TurnOver/TurnOverMain';
 import IndustryMain from './Industry/IndustryMain';
+import AbNormalMain from './AbnormalDeal/AbNormalMain';
 
 const TabPane = Tabs.TabPane;
 
@@ -21,6 +22,7 @@ class CreditMain extends React.Component {
               <TabPane tab="行业分析" key="2" ><IndustryMain /></TabPane>
               <TabPane tab="隐含评级" key="3" ><HidenCreditMain /></TabPane>
               <TabPane tab="信用换手" key="4" ><TurnOverMain /></TabPane>
+              <TabPane tab="异常成交" key="5" ><AbNormalMain /></TabPane>
             </Tabs>
           </MainContent>
         </div>

@@ -1,6 +1,6 @@
 /* eslint-disable no-self-compare,react/sort-comp,no-empty */
 import React from 'react';
-import { Table, Popconfirm, Form, Button, Select, Row, Col, Switch, Input, message } from 'antd';
+import { Table, Popconfirm, Form, Button, Select, Row, Col, Switch, Input, message, Card } from 'antd';
 import fetch from 'dva/fetch';
 import request from '../../../utils/request';
 import '../../../config';
@@ -63,7 +63,24 @@ class SettleDetail extends React.Component {
       width: '5%',
       render: (text, record) =>
         (this.state.dataSource.length >= 1 ? (
-          <Popconfirm title="Sure to delete?" onConfirm={() => this.handleDelete(record.id)}>
+          <Popconfirm
+            title={<div>
+              <Card
+                size="small"
+                title="确认删除该头寸？"
+                style={{ width: 300 }}
+              >
+                <h3>姓名: <strong>{record.trader}</strong></h3>
+                <p />
+                <h3>债券: <strong>{record.bondcode}</strong></h3>
+                <p />
+                <h3>买入: <strong>{record.buyamt}</strong> 亿</h3>
+                <p />
+                <h3>卖出: <strong>{record.sellamt}</strong> 亿</h3>
+              </Card>
+            </div>}
+            onConfirm={() => this.handleDelete(record.id)}
+          >
             <a>删除</a>
           </Popconfirm>
         ) : null),
@@ -75,9 +92,10 @@ class SettleDetail extends React.Component {
       visible: false,
       visible2: false,
       selectoption: '',
-      NoAdd: false,
+      NoAdd: true,
       psw: '',
       switchdisabled: true,
+      inputpsw: '',
     };
   }
 
@@ -118,7 +136,7 @@ class SettleDetail extends React.Component {
             } else {
               NoAdd = false;
             }
-            this.setState({ NoAdd });
+            this.setState({ NoAdd }, () => { this.props.fetchSumData(); });
           });
         });
       } catch (error) {
@@ -133,14 +151,14 @@ class SettleDetail extends React.Component {
           } else {
             NoAdd = false;
           }
-          this.setState({ NoAdd });
+          this.setState({ NoAdd }, () => { this.props.fetchSumData(); });
         });
       });
     }
   };
 
   onInput =() => {
-    if (this.state.psw === 'zjs666') {
+    if (this.state.inputpsw === this.state.psw) {
       this.setState({ switchdisabled: false });
     } else {
       message.error('密码输入错误！');
@@ -217,18 +235,22 @@ class SettleDetail extends React.Component {
    };
 
    handleDelete = (values) => {
-     try {
-       fetch('/api/deletesettle', {
-         method: 'POST',
-         body: JSON.stringify(values),
-         headers: {
-           'Content-Type': 'application/json',
-         },
-       }).then(() => {
-         this.fetchData();
-       }).then(() => { this.props.fetchSumData(); });
-     } catch (error) {
+     if (this.state.NoAdd) {
+       message.warn('头寸已冻结，请联系资金室解冻');
+     } else {
+       try {
+         fetch('/api/deletesettle', {
+           method: 'POST',
+           body: JSON.stringify(values),
+           headers: {
+             'Content-Type': 'application/json',
+           },
+         }).then(() => {
+           this.fetchData();
+         }).then(() => { this.props.fetchSumData(); });
+       } catch (error) {
        // console.log('error: ', error);
+       }
      }
    };
 
@@ -241,7 +263,7 @@ class SettleDetail extends React.Component {
              <Button type="primary" onClick={this.showModal2} block disabled={this.state.NoAdd}>新增头寸</Button>
            </Col>
            <Col span={4}>
-             <Input placeholder="请输入密码,按回车确认" type="password" onPressEnter={this.onInput} onChange={e => this.setState({ psw: e.target.value })} />
+             <Input placeholder="请输入密码,按回车确认" type="password" onPressEnter={this.onInput} onChange={e => this.setState({ inputpsw: e.target.value })} />
            </Col>
            <Col span={2}>
              <Switch checkedChildren="允许新增" unCheckedChildren="禁止新增" defaultChecked onChange={this.onSwitchChange} disabled={this.state.switchdisabled} />
