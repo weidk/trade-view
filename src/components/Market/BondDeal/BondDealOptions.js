@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, DatePicker, Row, Col, Tooltip, Tag } from 'antd';
+import { Input, DatePicker, Row, Col, Tag } from 'antd';
 import moment from 'moment';
 import styles from './BondDealOptions.css';
 
@@ -11,11 +11,7 @@ class BondDealOptions extends React.Component {
       <div className={styles.normal}>
         <Row type="flex" align="bottom">
           <Col span={4}>
-            <Tooltip title="选择查询成交的起始日期" placement="bottom">
-              <div>
-                <DatePicker size="large" onChange={this.props.pickerChange} defaultValue={moment()} />
-              </div>
-            </Tooltip>
+            <DatePicker size="large" onChange={this.props.pickerChange} defaultValue={moment()} />
           </Col>
           <Col span={6} push={1}><Search
             placeholder="请输入债券代码或简称..."

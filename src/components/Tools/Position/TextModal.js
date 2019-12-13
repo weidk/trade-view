@@ -1,5 +1,6 @@
 import React from 'react';
-import { Drawer, Input, Row, Col, Button, Select, Table, message } from 'antd';
+import { Drawer, Input, Row, Col, Button, Select, Table, message, Tag } from 'antd';
+import fetch from 'dva/fetch';
 import { EditableFormRow, EditableCell } from '../../Utils/EditableCell';
 import '../../Utils/EditableCell.css';
 import styles from './TextModal.css';
@@ -57,15 +58,19 @@ class TextModal extends React.Component {
       dataIndex: 'nonbond',
       width: '20%',
     }];
+
     this.state = {
       rowtext: '',
       trader: '',
       dataSource: [],
       nonbondText: '',
       check: false,
+      plus1Data: [],
+      dealtimes: '',
     };
   }
 
+  // eslint-disable-next-line react/sort-comp
   handleSave = (row) => {
     const newData = [...this.state.dataSource];
     const index = newData.findIndex(item => row.key === item.key);
@@ -81,6 +86,24 @@ class TextModal extends React.Component {
   handleChange=(value) => {
     this.setState({ trader: value });
   }
+  getFlows =() => {
+    try {
+      fetch('/api/queryplus1settle', {
+        method: 'POST',
+        body: JSON.stringify({ trader: this.state.trader }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }).then((response) => {
+        response.json().then((ds) => {
+          this.setState({ plus1Data: ds, dealtimes: _.sumBy(ds, 'TOTALDEALTIMES') }, this.RexText);
+        });
+      });
+      // eslint-disable-next-line no-empty
+    } catch (error) {
+    }
+  }
+
 
   RexText = () => {
     if (this.state.trader === '') {
@@ -88,6 +111,7 @@ class TextModal extends React.Component {
     } else {
       const raw = this.state.rowtext;
       try {
+      //  现券头寸
       // eslint-disable-next-line no-unused-vars
         let rawList = _.split(raw, /[\r\n]/);
         rawList = _.map(rawList, _.trim);
@@ -128,6 +152,7 @@ class TextModal extends React.Component {
             newList.push({ key, trader: this.state.trader, bondcode, buyamt, sellamt, netamt, frozeamt, note });
           }
         });
+        // 非现券头寸
         const nonbondTextList = _.split(this.state.nonbondText, /[\r\n]/);
         nonbondTextList.forEach((text) => {
           const tt = text.replace(/\s+/, '');
@@ -136,7 +161,7 @@ class TextModal extends React.Component {
             newList.push({ key, trader: this.state.trader, nonbond: tt });
           }
         });
-        // newList.push({ trader: this.state.trader, nonbond: this.state.nonbondText });
+
         this.setState({ dataSource: newList });
         if (newList.length > 0) {
           if (newList[0].trader !== '') {
@@ -189,7 +214,7 @@ class TextModal extends React.Component {
           }}
           placement="top"
           closable={false}
-          height="600"
+          height="650"
         >
           <Row gutter={16}>
             <Col span={8}>
@@ -209,7 +234,7 @@ class TextModal extends React.Component {
               <TextArea
                 placeholder="非现券的其他事项写在这里（远期、保证金划转、到期兑付、票息、借贷、质押.....）"
                 allowClear
-                rows={5}
+                rows={7}
                 onChange={e => this.setState({ nonbondText: e.target.value })}
               />
             </Col>

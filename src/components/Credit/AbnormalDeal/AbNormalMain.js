@@ -2,7 +2,7 @@
 import React from 'react';
 import fetch from 'dva/fetch';
 import moment from 'moment';
-import { DatePicker, Row, Col, Table, InputNumber, Divider, Button, Spin } from 'antd';
+import { DatePicker, Row, Col, Table, InputNumber, Divider, Button, Spin, message } from 'antd';
 import styles from './AbNormalMain.css';
 
 const RangePicker = DatePicker.RangePicker;
@@ -96,18 +96,22 @@ class AbNormalMain extends React.Component {
 
   fetchData = () => {
     try {
-      this.setState({ loading: true });
-      fetch('/api/abnormaldeals', {
-        method: 'POST',
-        body: JSON.stringify({ start: this.state.startDay, end: this.state.endDay, deviation: this.state.deviation, dealyield: this.state.dealyield }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      }).then((response) => {
-        response.json().then((ds) => {
-          this.setState({ tabledata: ds, loading: false });
+      if (moment(this.state.endDay).date() - moment(this.state.startDay).date() > 5) {
+        message.error('查询期限不得超过5天');
+      } else {
+        this.setState({ loading: true });
+        fetch('/api/abnormaldeals', {
+          method: 'POST',
+          body: JSON.stringify({ start: this.state.startDay, end: this.state.endDay, deviation: this.state.deviation, dealyield: this.state.dealyield }),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }).then((response) => {
+          response.json().then((ds) => {
+            this.setState({ tabledata: ds, loading: false });
+          });
         });
-      });
+      }
     } catch (error) {
       this.setState({ loading: false });
       // console.log('error: ', error);

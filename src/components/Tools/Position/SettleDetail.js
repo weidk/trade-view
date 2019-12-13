@@ -2,13 +2,15 @@
 import React from 'react';
 import { Table, Popconfirm, Form, Button, Select, Row, Col, Switch, Input, message, Card } from 'antd';
 import fetch from 'dva/fetch';
-import request from '../../../utils/request';
 import '../../../config';
+import request from '../../../utils/request';
 import styles from './SettleDetail.css';
 import TextModal from './TextModal';
+import TextModalNew from './TextModalNew';
 
 // const FormItem = Form.Item;
 const { Option } = Select;
+const Stomp = require('stompjs');
 
 let traderFilter = global.constants.traders;
 traderFilter = traderFilter.map((t) => {
@@ -91,6 +93,7 @@ class SettleDetail extends React.Component {
       dataSource: [],
       visible: false,
       visible2: false,
+      visible3: false,
       selectoption: '',
       NoAdd: true,
       psw: '',
@@ -105,15 +108,26 @@ class SettleDetail extends React.Component {
       const psw = ds.data;
       this.setState({ psw });
     });
-    setInterval(() => this.getData('/api/positionstatus', (ds) => {
-      let NoAdd;
-      if (ds.data[0].NotAllowAdd === 1) {
-        NoAdd = true;
-      } else {
-        NoAdd = false;
-      }
-      this.setState({ NoAdd });
-    }), 5000);
+
+    // eslint-disable-next-line no-undef
+    const ws = new WebSocket(global.constants.rabbimqws);
+    const client = Stomp.over(ws);
+    client.heartbeat.incoming = 0;
+    client.connect('bond', 'bond', () => {
+      client.subscribe('/exchange/checkpositionstatus/', (ds) => {
+        const dsjson = JSON.parse(ds.body);
+        let NoAdd;
+        if (dsjson[0].NotAllowAdd === 1) {
+          NoAdd = true;
+        } else {
+          NoAdd = false;
+        }
+        this.setState({ NoAdd });
+      }, { 'auto-delete': true });
+    }, (evt) => {
+      console.log(`error: ${evt}`);
+    }, '/');
+
     const selectchildren = global.constants.traders;
     // eslint-disable-next-line react/no-did-mount-set-state
     this.setState({ selectoption: selectchildren.map(trader => <Option key={trader}>{trader}</Option>) });
@@ -175,16 +189,25 @@ class SettleDetail extends React.Component {
        visible2: true,
      });
    };
+   showModal3 = () => {
+     this.setState({
+       visible3: true,
+     });
+   };
+
    handleCancel = () => {
      this.setState({
        visible: false,
      });
    };
-
-
    handleCancel2 = () => {
      this.setState({
        visible2: false,
+     });
+   };
+   handleCancel3 = () => {
+     this.setState({
+       visible3: false,
      });
    };
 
@@ -202,6 +225,22 @@ class SettleDetail extends React.Component {
      }
      this.setState({
        visible2: false,
+     });
+   };
+   handleOk3 = (values) => {
+     try {
+       fetch('/api/postsettle', {
+         method: 'POST',
+         body: JSON.stringify(values),
+         headers: {
+           'Content-Type': 'application/json',
+         },
+       }).then(() => { this.fetchData(); }).then(() => { this.props.fetchSumData(); });
+     } catch (error) {
+       // console.log('error: ', error);
+     }
+     this.setState({
+       visible3: false,
      });
    };
 
@@ -258,9 +297,13 @@ class SettleDetail extends React.Component {
      return (
        <div className={styles.normal}>
          <Row gutter={16}>
-           <Col span={18}>
+           <Col span={9}>
              {/* <Button type="primary" onClick={this.showModal2} block disabled={new Date() > new Date(new Date().setHours(14)).setMinutes(30) & this.state.NoAdd}>新增头寸</Button>*/}
-             <Button type="primary" onClick={this.showModal2} block disabled={this.state.NoAdd}>新增头寸</Button>
+             <Button type="primary" onClick={this.showModal2} block disabled={this.state.NoAdd}>新增头寸（手动）</Button>
+           </Col>
+           <Col span={9}>
+             {/* <Button type="primary" onClick={this.showModal2} block disabled={new Date() > new Date(new Date().setHours(14)).setMinutes(30) & this.state.NoAdd}>新增头寸</Button>*/}
+             <Button type="primary" onClick={this.showModal3} block disabled={this.state.NoAdd}>新增头寸（自动）</Button>
            </Col>
            <Col span={4}>
              <Input placeholder="请输入密码,按回车确认" type="password" onPressEnter={this.onInput} onChange={e => this.setState({ inputpsw: e.target.value })} />
@@ -272,6 +315,7 @@ class SettleDetail extends React.Component {
          {/* <Button type="primary" onClick={this.showModal} disabled={new Date() > new Date(new Date().setHours(17)).setMinutes(50)}>新增一条结算头寸</Button>*/}
          <Table columns={this.columns} dataSource={this.state.dataSource} pagination={false} size="small" />
          <TextModal visible={this.state.visible2} handleOk={this.handleOk2} handleCancel={this.handleCancel2} selectchildren={this.state.selectoption} />
+         <TextModalNew visible={this.state.visible3} handleOk={this.handleOk3} handleCancel={this.handleCancel3} selectchildren={this.state.selectoption} />
        </div>
      );
    }
