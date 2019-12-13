@@ -1,5 +1,5 @@
 import React from 'react';
-import { Drawer, Input, Row, Col, Button, Select, Table, message, Tag } from 'antd';
+import { Drawer, Input, Row, Col, Button, Select, Table, message } from 'antd';
 import fetch from 'dva/fetch';
 import { EditableFormRow, EditableCell } from '../../Utils/EditableCell';
 import '../../Utils/EditableCell.css';

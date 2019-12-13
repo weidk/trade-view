@@ -230,9 +230,6 @@ class TextModalNew extends React.Component {
     }
   };
 
-  rawBondFormat = (raw) => {
-    return newlist;
-  }
 
   render() {
     const components = {

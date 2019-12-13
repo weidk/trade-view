@@ -37,41 +37,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CalPosition.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Tools/Position/CalPosition.js">
+      <file leaf-file-name="TextModalNew.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Tools/Position/TextModalNew.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2848">
-              <caret line="166" column="56" lean-forward="false" selection-start-line="166" selection-start-column="56" selection-end-line="166" selection-end-column="56" />
+            <state relative-caret-position="433">
+              <caret line="233" column="12" lean-forward="true" selection-start-line="233" selection-start-column="12" selection-end-line="233" selection-end-column="12" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#CalPosition#0" expanded="false" />
-                <element signature="e#516#629#0" expanded="false" />
-                <element signature="n#!!block;n#componentDidMount#0;n#CalPosition#0" expanded="false" />
-                <element signature="e#5403#5756#0" expanded="false" />
-                <element signature="e#5779#6502#0" expanded="false" />
-                <element signature="e#6682#7015#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BondDealMain.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Market/BondDeal/BondDealMain.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2880">
-              <caret line="95" column="11" lean-forward="false" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BondDealOptions.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Market/BondDeal/BondDealOptions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#463#576#0" expanded="false" />
+                <element signature="e#2027#2085#0" expanded="false" />
+                <element signature="e#2104#2581#0" expanded="false" />
+                <element signature="e#2813#3006#0" expanded="false" />
+                <element signature="e#3064#3739#0" expanded="false" />
+                <element signature="e#3800#4140#0" expanded="false" />
+                <element signature="e#4198#5825#0" expanded="false" />
+                <element signature="e#5906#6072#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -176,14 +155,14 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/Credit/CreditMain.js" />
         <option value="$PROJECT_DIR$/.roadhogrc" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Position/TextModal.js" />
         <option value="$PROJECT_DIR$/src/components/Tools/Position/PositionMain.js" />
         <option value="$PROJECT_DIR$/src/components/Tools/Position/SettleDetail.js" />
         <option value="$PROJECT_DIR$/src/components/Credit/AbnormalDeal/AbNormalMain.js" />
-        <option value="$PROJECT_DIR$/src/components/Tools/Position/TextModalNew.js" />
         <option value="$PROJECT_DIR$/src/components/Tools/Position/ToListBond.js" />
         <option value="$PROJECT_DIR$/src/components/Tools/Position/CalPosition.js" />
         <option value="$PROJECT_DIR$/src/components/Market/BondDeal/BondDealOptions.js" />
+        <option value="$PROJECT_DIR$/src/components/Tools/Position/TextModal.js" />
+        <option value="$PROJECT_DIR$/src/components/Tools/Position/TextModalNew.js" />
       </list>
     </option>
   </component>
@@ -260,24 +239,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trade-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trade-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -300,7 +261,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Market" />
+              <option name="myItemId" value="Tools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -322,11 +283,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Market" />
+              <option name="myItemId" value="Tools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BondDeal" />
+              <option name="myItemId" value="Position" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -885,20 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Position/TextModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="149" column="32" lean-forward="true" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tools/Position/TextModalNew.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2688">
-          <caret line="138" column="9" lean-forward="false" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Tools/Position/ToListBond.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -944,12 +891,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/BondDeal/BondDealOptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Market/BondDeal/BondDealMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="95" column="11" lean-forward="false" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Tools/Position/CalPosition.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2848">
+        <state relative-caret-position="32">
           <caret line="166" column="56" lean-forward="false" selection-start-line="166" selection-start-column="56" selection-end-line="166" selection-end-column="56" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#CalPosition#0" expanded="false" />
             <element signature="e#516#629#0" expanded="false" />
             <element signature="n#!!block;n#componentDidMount#0;n#CalPosition#0" expanded="false" />
@@ -960,20 +925,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/BondDeal/BondDealMain.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Tools/Position/TextModal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="95" column="11" lean-forward="false" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="160">
+          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Market/BondDeal/BondDealOptions.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Tools/Position/TextModalNew.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="433">
+          <caret line="233" column="12" lean-forward="true" selection-start-line="233" selection-start-column="12" selection-end-line="233" selection-end-column="12" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#463#576#0" expanded="false" />
+            <element signature="e#2027#2085#0" expanded="false" />
+            <element signature="e#2104#2581#0" expanded="false" />
+            <element signature="e#2813#3006#0" expanded="false" />
+            <element signature="e#3064#3739#0" expanded="false" />
+            <element signature="e#3800#4140#0" expanded="false" />
+            <element signature="e#4198#5825#0" expanded="false" />
+            <element signature="e#5906#6072#0" expanded="false" />
           </folding>
         </state>
       </provider>
