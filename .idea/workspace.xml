@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4243f2f-74f1-4643-87e6-cc7f8f2efab5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Market/CurveMat/RelativeTsChart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/brokerQuote.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/BigNews/BigNewsChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/BigNews/BigNewsChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/BigNews/BigNewsMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/BigNews/BigNewsMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/BondDeal/BondDealMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/BondDeal/BondDealMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/BondLend/BondLendMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/BondLend/BondLendMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/BondScatter/BondScatterMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/BondScatter/BondScatterMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveCurve.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveCurve.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveRankChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/CurveMat/ReletiveRankChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/MarketMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/MarketMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/MarketMaker/MarketMakerMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/MarketMaker/MarketMakerMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/PureBondIndex/ConvertBondMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/PureBondIndex/ConvertBondMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/PureBondIndex/ConvertBondRatio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/PureBondIndex/ConvertBondRatio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealMainNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealMainNew.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market/SecondMarketDeal/DealTab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/Position/HistorySettle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/Position/HistorySettle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/Position/Position.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/Position/Position.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/Position/PositionMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/Position/PositionMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/Position/SettleDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/Position/SettleDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/Position/SettleMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/Position/SettleMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/Position/TextModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/Position/TextModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/Position/TextModalNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/Position/TextModalNew.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/Position/ToListBond.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/Position/ToListBond.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/Report/ProfitChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/Report/ProfitChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/Report/ReportMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/Report/ReportMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/SPositions/BPMPosition.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/SPositions/BPMPosition.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/SPositions/BPMPosition.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/SPositions/BPMPosition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tools/ToolMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tools/ToolMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/brokerhq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/brokerhq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../python/喇叭喊old" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OneDrive - Lolihub/work/trade-view" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -169,7 +134,10 @@
       <workItem from="1610070112101" duration="55000" />
       <workItem from="1610071571674" duration="92000" />
       <workItem from="1610072153570" duration="1007000" />
-      <workItem from="1610073645120" duration="976000" />
+      <workItem from="1610073645120" duration="1131000" />
+      <workItem from="1610097805717" duration="205000" />
+      <workItem from="1610098026933" duration="87000" />
+      <workItem from="1610099437321" duration="246000" />
     </task>
     <servers />
   </component>
@@ -186,25 +154,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1180" y="298" key="FileChooserDialogImpl" timestamp="1609836639156">
+    <state x="-1180" y="298" key="FileChooserDialogImpl" timestamp="1610098112428">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1180" y="298" key="FileChooserDialogImpl/0.0.1857.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1606181542562" />
-    <state x="-1180" y="298" key="FileChooserDialogImpl/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609836639156" />
+    <state x="-1180" y="298" key="FileChooserDialogImpl/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1610098112428" />
     <state x="-1008" y="501" key="SettingsEditor" timestamp="1603098197814">
       <screen x="-1080" y="0" width="1080" height="1920" />
     </state>
     <state x="-1008" y="501" key="SettingsEditor/0.0.1858.1080/-1080.0.1080.1920@-1080.0.1080.1920" timestamp="1603098197814" />
-    <state x="-1508" y="443" key="com.intellij.ide.util.TipDialog" timestamp="1610071654457">
+    <state x="-1508" y="443" key="com.intellij.ide.util.TipDialog" timestamp="1610098026817">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1508" y="443" key="com.intellij.ide.util.TipDialog/0.0.1857.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1606181528109" />
     <state x="-848" y="787" key="com.intellij.ide.util.TipDialog/0.0.1858.1080/-1080.0.1080.1920@-1080.0.1080.1920" timestamp="1604479805772" />
-    <state x="-1508" y="443" key="com.intellij.ide.util.TipDialog/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1610071654457" />
-    <state x="-1273" y="295" width="626" height="490" key="find.popup" timestamp="1610069395074">
+    <state x="-1508" y="443" key="com.intellij.ide.util.TipDialog/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1610098026817" />
+    <state x="-1273" y="295" width="626" height="490" key="find.popup" timestamp="1610098033556">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1273" y="295" width="626" height="490" key="find.popup/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1610069395074" />
+    <state x="-1273" y="295" width="626" height="490" key="find.popup/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1610098033556" />
   </component>
   <component name="masterDetails">
     <states>
