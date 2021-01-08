@@ -4,6 +4,7 @@ import CalPosition from './CalPosition';
 import SettleMain from './SettleMain';
 import HistorySettle from './HistorySettle';
 import ToListBond from './ToListBond';
+import ToSettleBC from './ToSettleBC';
 import styles from './PositionMain.css';
 
 const TabPane = Tabs.TabPane;
@@ -16,6 +17,7 @@ function PositionMain() {
         <TabPane tab="头寸统计" key="2" ><CalPosition /></TabPane>
         <TabPane tab="历史查询" key="3" ><HistorySettle /></TabPane>
         <TabPane tab="待上市券" key="4" ><ToListBond /></TabPane>
+        <TabPane tab="债券通" key="5" ><ToSettleBC /></TabPane>
       </Tabs>
     </div>
   );

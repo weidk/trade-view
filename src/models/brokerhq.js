@@ -14,7 +14,6 @@ export default {
       return { ...state, tradeprice };
     },
   },
-  effects: {},
   subscriptions: {
     openSocket({ dispatch }) {
       const ws = new WebSocket(global.constants.rabbimqws);

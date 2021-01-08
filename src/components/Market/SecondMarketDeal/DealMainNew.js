@@ -26,7 +26,7 @@ class DealMainNew extends React.Component {
   getSonData = (d, bondtype, term = null) => {
     let dt = [];
     d.forEach(i =>
-      dt.push({ InsType: i.InsType, Term: i.Term, Amt: i[bondtype] })); // 筛选债券类别
+      dt.push({ InsType: i.InsType, Term: i.Term, Amt: Math.round(i[bondtype]) })); // 筛选债券类别
     // d.forEach(i => dt.push(R.pick(['InsType', 'Term', bondtype])(i))); // 筛选债券类别
     if (term !== null) {
       dt = R.filter(R.propEq('Term', term))(dt);// 筛选期限

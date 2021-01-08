@@ -1,9 +1,23 @@
 import React from 'react';
 import { Chart, Tooltip, Axis, Line, Guide } from 'viser-react';
+import { Divider, Table } from 'antd';
 import styles from './BigNewsChart.css';
 
 
 function BigNewsChart(props) {
+  const columns = [
+    {
+      title: '日期',
+      dataIndex: 'DATE',
+    },
+    {
+      title: '收益率',
+      dataIndex: 'CNYIELD',
+    }, {
+      title: '事件',
+      dataIndex: 'NEWS',
+    },
+  ];
   const guides = [];
   const { data } = props;
   let dirc = 'upward';
@@ -38,6 +52,14 @@ function BigNewsChart(props) {
           return <Guide key={i} {...opts} />;
         })}
       </Chart>
+      <Divider />
+      <Table
+        columns={columns}
+        dataSource={data}
+        pagination={false}
+        size="small"
+      />
+
     </div>
   );
 }

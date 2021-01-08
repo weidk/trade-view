@@ -35,6 +35,9 @@ function RouterConfig({ history, app }) {
 
   const ToolsMain = dynamic({
     app,
+    models: () => [
+      import('./models/brokerQuote'),
+    ],
     component: () => import('./components/Tools/ToolMain'),
   });
 

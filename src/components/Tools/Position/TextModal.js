@@ -119,15 +119,16 @@ class TextModal extends React.Component {
         let key = 0;
         rawList = rawList.forEach((tempStr) => {
           const newtempStr = tempStr.replace(/\s+/g, ' '); // 将多个空格替换成一个空格
-          const strList = _.split(newtempStr, /\s/); // 按空格分割为数组
+          const newtempStr1 = newtempStr.replace(/(\(|（).*(）|\))/, '');
+          const strList = _.split(newtempStr1, /\s/); // 按空格分割为数组
           const bondcode = strList[0];
-          let buyamt = _.find(strList, o => o.indexOf('买') !== -1);
+          let buyamt = _.find(strList, o => o.includes('买'));
           if (buyamt !== undefined) {
             buyamt = buyamt.match(/\d+\.?\d*/)[0];
           } else {
             buyamt = 0;
           }
-          let sellamt = _.find(strList, o => o.indexOf('卖') !== -1);
+          let sellamt = _.find(strList, o => o.includes('卖'));
           if (sellamt !== undefined) {
             sellamt = sellamt.match(/\d+\.?\d*/)[0];
           } else {
@@ -262,7 +263,7 @@ class TextModal extends React.Component {
               <Button
                 type="danger"
                 block
-                disabled={!this.state.check}
+                disabled={!this.state.check || this.props.noAdd}
                 onClick={() => {
                   if (this.state.check) {
                     this.setState({ check: false });

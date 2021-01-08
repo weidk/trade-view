@@ -2,9 +2,9 @@ import React from 'react';
 import { Affix, Tabs, Button, DatePicker, Spin } from 'antd';
 import moment from 'moment';
 import fetch from 'dva/fetch';
-import ReletiveCurveChart from './ReletiveCurveChart';
 import ReletiveRankChart from './ReletiveRankChart';
 import ReletiveChartAll from './ReletiveChartAll';
+import ReletiveCurveChart from './ReletiveCurveChart';
 // import styles from './ReletiveCurve.css';
 
 const TabPane = Tabs.TabPane;
@@ -25,7 +25,7 @@ class ReletiveCurve extends React.Component {
   }
 
   componentDidMount() {
-    this.pickerChange(moment().subtract(1, 'years'));
+    this.pickerChange(moment().subtract(3, 'years'));
   }
 
   pickerChange = (values) => {
@@ -149,7 +149,7 @@ class ReletiveCurve extends React.Component {
   render() {
     const operations =
       (<Affix offsetTop={this.state.top}>
-        <DatePicker onChange={this.pickerChange} defaultValue={moment().subtract(1, 'years')} />
+        <DatePicker onChange={this.pickerChange} defaultValue={moment().subtract(3, 'years')} />
         <Button type="primary" onClick={() => window.scrollTo(0, 0)}>回到顶部</Button>
         <Button type="primary" onClick={() => this.writeToExcel(this.state.chartdata)}>导出excel</Button>
       </Affix>);
@@ -158,7 +158,7 @@ class ReletiveCurve extends React.Component {
         <Spin spinning={this.state.loading} >
           <Tabs defaultActiveKey="1" tabPosition="top" tabBarExtraContent={operations}>
             <TabPane tab="排序" key="1" >
-              <ReletiveRankChart data={this.state.chartdata.排序} />
+              <ReletiveRankChart data={this.state.chartdata.排序} allData={this.state.chartdata.all} />
             </TabPane>
             <TabPane tab="利率" key="2" >
               <ReletiveCurveChart data={this.state.chartdata.国债} title="国债" />

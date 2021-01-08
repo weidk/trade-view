@@ -2,6 +2,8 @@ import React from 'react';
 import fetch from 'dva/fetch';
 import SettleDetail from './SettleDetail';
 import SettleSum from './SettleSum';
+import BondLendPositions from './BondLendPositions';
+import UnSubTraders from './UnSubTraders';
 import request from '../../../utils/request';
 import styles from './SettleMain.css';
 
@@ -56,6 +58,8 @@ class SettleMain extends React.Component {
   render() {
     return (
       <div className={styles.normal}>
+        <UnSubTraders />
+        <BondLendPositions />
         <SettleSum settleAmt={this.state.settleAmt} netbond={this.state.netbond} nonbond={this.state.nonbond} fetchData={this.fetchData} />
         <SettleDetail fetchSumData={this.fetchData} />
       </div>

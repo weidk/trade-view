@@ -54,6 +54,10 @@ class SettleDetail extends React.Component {
     {
       title: '备注',
       dataIndex: 'note',
+      filters: [
+        { text: '提醒', value: '提醒' },
+      ],
+      onFilter: (value, record) => (record.note === null ? false : record.note.includes('提醒')),
     }, {
       title: '非现券头寸',
       editable: true,
@@ -229,6 +233,7 @@ class SettleDetail extends React.Component {
    };
    handleOk3 = (values) => {
      try {
+       console.log(values);
        fetch('/api/postsettle', {
          method: 'POST',
          body: JSON.stringify(values),
@@ -314,8 +319,8 @@ class SettleDetail extends React.Component {
          </Row>
          {/* <Button type="primary" onClick={this.showModal} disabled={new Date() > new Date(new Date().setHours(17)).setMinutes(50)}>新增一条结算头寸</Button>*/}
          <Table columns={this.columns} dataSource={this.state.dataSource} pagination={false} size="small" />
-         <TextModal visible={this.state.visible2} handleOk={this.handleOk2} handleCancel={this.handleCancel2} selectchildren={this.state.selectoption} />
-         <TextModalNew visible={this.state.visible3} handleOk={this.handleOk3} handleCancel={this.handleCancel3} selectchildren={this.state.selectoption} />
+         <TextModal visible={this.state.visible2} handleOk={this.handleOk2} handleCancel={this.handleCancel2} selectchildren={this.state.selectoption} noAdd={this.state.NoAdd} />
+         <TextModalNew visible={this.state.visible3} handleOk={this.handleOk3} handleCancel={this.handleCancel3} selectchildren={this.state.selectoption} noAdd={this.state.NoAdd} />
        </div>
      );
    }

@@ -15,6 +15,10 @@ class BondLendMain extends React.Component {
     };
   }
 
+  componentDidMount() {
+    this.fetchGKData();
+  }
+
   fetchBondLendData = (values) => {
     try {
       fetch('/api/bondlend', {

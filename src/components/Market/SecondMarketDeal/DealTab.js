@@ -2,6 +2,8 @@ import React from 'react';
 import { Tabs, Radio, Affix } from 'antd';
 import DealMain from './DealMain';
 import DealMainNew from './DealMainNew';
+import DealMainNewOldCompare from './DealMainNewOldCompare';
+import BondReport from './BondReport';
 import styles from './DealTab.css';
 
 const TabPane = Tabs.TabPane;
@@ -32,13 +34,16 @@ class DealTab extends React.Component {
           <Radio.Button value="基金公司及产品">基金</Radio.Button>
           <Radio.Button value="保险公司">保险</Radio.Button>
           <Radio.Button value="境外机构">境外</Radio.Button>
+          <Radio.Button value="理财类产品">理财</Radio.Button>
         </Radio.Group>
       </Affix>);
     return (
       <div className={styles.normal}>
         <Tabs defaultActiveKey="1" tabPosition="top" tabBarExtraContent={operations}>
           <TabPane tab="New" key="1" ><DealMainNew selectedIns={this.state.radioValue} /></TabPane>
-          <TabPane tab="Old" key="2" ><DealMain /></TabPane>
+          <TabPane tab="新老券" key="2" ><DealMainNewOldCompare selectedIns={this.state.radioValue} /></TabPane>
+          <TabPane tab="Old" key="3" ><DealMain /></TabPane>
+          <TabPane tab="现券日报" key="4" ><BondReport /></TabPane>
         </Tabs>
       </div>
     );

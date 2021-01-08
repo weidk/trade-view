@@ -1,6 +1,6 @@
 import React from 'react';
 import { Chart, Tooltip, Legend, Axis, Geom } from 'bizcharts';
-import { DatePicker, Row, Col, Button } from 'antd';
+import { DatePicker, Row, Col, Button, Divider } from 'antd';
 import { DataView } from '@antv/data-set';
 import moment from 'moment';
 import fetch from 'dva/fetch';
@@ -48,7 +48,7 @@ class ConvertBondRatio extends React.Component {
     option.datas = [
       {
         sheetData: data,
-        sheetHeader: ['日期', '溢价率', '中债转债指数', '正股估算'],
+        sheetHeader: ['日期', '简单溢价率', '加权溢价率', '简单波动率', '加权波动率', '中债转债指数', '正股估算'],
       },
     ];
     const toExcel = new ExportJsonExcel(option);
@@ -60,7 +60,14 @@ class ConvertBondRatio extends React.Component {
     const dv = new DataView();
     dv.source(this.state.chartdata).transform({
       type: 'fold',
-      fields: ['正股估算', '中债转债指数'], // 展开字段集
+      fields: ['加权溢价率', '简单溢价率'],
+      key: 'type',
+      value: 'value',
+    });
+    const dvvol = new DataView();
+    dvvol.source(this.state.chartdata).transform({
+      type: 'fold',
+      fields: ['加权波动率', '简单波动率'], // 展开字段集
       key: 'type', // key字段
       value: 'value', // value字段
     });
@@ -81,7 +88,7 @@ class ConvertBondRatio extends React.Component {
           </Col>
         </Row>
 
-        <br />
+        <Divider> 转股溢价率 </Divider>
         <Chart height={660} padding="77" data={dv} forceFit >
           <Tooltip />
           <Legend />
@@ -93,24 +100,44 @@ class ConvertBondRatio extends React.Component {
             size={2}
             shape={'smooth'}
             color={'type'}
-          />
-          <Axis
-            name="溢价率" position="right" label={{
-              formatter: (val) => {
-                return `${val}%`;
-              },
-            }}
-          />
-
-          <Geom
-            type="line"
-            position="日期*溢价率"
-            size={2}
-            shape={'smooth'}
-            color="#ec6663"
             style={{
               lineDash: [4, 4],
             }}
+          />
+          <Axis name="中债转债指数" position="right" />
+
+          <Geom
+            type="line"
+            position="日期*中债转债指数"
+            size={2}
+            shape={'smooth'}
+            color="#ec6663"
+          />
+        </Chart>
+        <Divider> 隐含波动率 </Divider>
+        <Chart height={660} padding="77" data={dvvol} forceFit >
+          <Tooltip />
+          <Legend />
+          <Axis name="日期" />
+          <Axis name="value" />
+          <Geom
+            type="line"
+            position="日期*value"
+            size={2}
+            shape={'smooth'}
+            color={'type'}
+            style={{
+              lineDash: [4, 4],
+            }}
+          />
+          <Axis name="中债转债指数" position="right" />
+
+          <Geom
+            type="line"
+            position="日期*中债转债指数"
+            size={2}
+            shape={'smooth'}
+            color="#ec6663"
           />
         </Chart>
       </div>

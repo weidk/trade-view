@@ -1,6 +1,6 @@
 import React from 'react';
 // import styles from './ProfitChart.css';
-import { Chart, Geom, Axis, Tooltip, Legend, View } from 'bizcharts';
+import { Chart, Geom, Axis, Tooltip, Legend } from 'bizcharts';
 import { DatePicker, Divider, Row, Col } from 'antd';
 import moment from 'moment';
 import fetch from 'dva/fetch';
@@ -37,8 +37,8 @@ class ProfitChart extends React.Component {
   }
 
   render() {
-    const sumdata = this.state.chartdata.filter(item => item.fundacc === '汇总');
-    const detaildata = this.state.chartdata.filter(item => item.fundacc !== '汇总');
+    const sumdata = this.state.chartdata.filter(item => item.investtype === '全部' || item.investtype === '投资' || item.investtype === '做市');
+    const detaildata = this.state.chartdata.filter(item => item.investtype !== '全部' && item.investtype !== '投资' && item.investtype !== '做市');
 
     const cols = {
       profit: {
@@ -47,30 +47,18 @@ class ProfitChart extends React.Component {
       },
     };
 
-
     return (
       <div>
         <DatePicker onChange={this.pickerChange} defaultValue={moment()} />
         <Divider dashed />
         <Row>
-          <Col span={22} offset={1}><Chart forceFit data={[1]} scale={cols} padding="auto" >
-            <Legend />
-            <Tooltip crosshairs={{ type: 'y' }} />
-            <View data={sumdata} >
+          <Col span={22} offset={1}>
+            <Chart forceFit data={sumdata} scale={cols} padding="auto" >
+              <Legend />
+              <Tooltip crosshairs={{ type: 'y' }} />
               <Geom
-                type="line" size={1} position="tradedate*profit" shape={'smooth'} color={['fundacc',
-                  (cut) => {
-                    if (cut === '汇总') { return '#2E8B57'; } else { return '#00ff00'; }
-                  }]}
+                type="area" size={1} position="tradedate*profit" shape={'smooth'} color="investtype"
               />
-              <Geom
-                type="area" position="tradedate*profit" shape={'smooth'} color={['fundacc',
-                  (cut) => {
-                    if (cut === '汇总') { return '#2E8B57'; } else { return '#00ff00'; }
-                  }]}
-              />
-            </View>
-            <View data={detaildata} >
               <Axis name="tradedate" />
               <Axis
                 name="profit" label={{
@@ -79,9 +67,24 @@ class ProfitChart extends React.Component {
                   },
                 }}
               />
-              <Geom type="line" position="tradedate*profit" color="fundacc" shape={'smooth'} />
-            </View>
-          </Chart></Col>
+            </Chart>
+          </Col>
+        </Row>
+        <Row>
+          <Col span={22} offset={1}><Chart forceFit data={detaildata} scale={cols} padding="auto" >
+            <Legend />
+            <Tooltip crosshairs={{ type: 'y' }} />
+            <Axis name="tradedate" />
+            <Axis
+              name="profit" label={{
+                formatter: (val) => {
+                  return `${val}万`;
+                },
+              }}
+            />
+            <Geom type="line" position="tradedate*profit" color="investtype" shape={'smooth'} />
+          </Chart>
+          </Col>
         </Row>
 
       </div>

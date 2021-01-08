@@ -10,7 +10,7 @@ const R = require('ramda');
 let filterData = [];
 let filterVal = [];
 let endDay = moment().format('YYYY-MM-DD');
-const filterTraderMethod = [{ text: '询价', value: '询价' }, { text: '撮合', value: '撮合' }, { text: '请求报价', value: '请求报价' }, { text: '一次点击成交', value: '一次点击成交' }];
+const filterTraderMethod = [{ text: '询价', value: '询价' }, { text: '匿名点击', value: '匿名点击' }, { text: '请求报价', value: '请求报价' }, { text: '一次点击成交', value: '一次点击成交' }];
 class BondDealMain extends React.Component {
   constructor() {
     super();

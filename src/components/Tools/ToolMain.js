@@ -9,7 +9,8 @@ import ReportMain from './Report/ReportMain';
 // import SysMonitorMain from './SystemMonitor/SysMonitorMain';
 import SaleMain from './Sales/SaleMain';
 import TodoMain from './TodoAlarm/TodoMain';
-import XBondMain from './XBond/XBondMain';
+import BondConnMain from './BondConnect/BondConnMain';
+import O32Main from './O32/O32Main';
 
 const TabPane = Tabs.TabPane;
 
@@ -24,8 +25,9 @@ class ToolMain extends React.Component {
               <TabPane tab="现券持仓" key="2"><PosMain /></TabPane>
               <TabPane tab="投资报表" key="3"><ReportMain /></TabPane>
               <TabPane tab="销售报表" key="4"><SaleMain /></TabPane>
-              <TabPane tab="XBond报表" key="5"><XBondMain /></TabPane>
+              <TabPane tab="债券通" key="5"><BondConnMain /></TabPane>
               <TabPane tab="语音提醒" key="6"><TodoMain /></TabPane>
+              <TabPane tab="O32监控" key="7"><O32Main /></TabPane>
             </Tabs>
           </MainContent>
         </div>

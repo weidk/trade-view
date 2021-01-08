@@ -34,7 +34,7 @@ class BigNewsMain extends React.Component {
   render() {
     return (
       <div className={styles.normal}>
-        <Tabs defaultActiveKey="7" >
+        <Tabs defaultActiveKey="8" >
           <TabPane tab="2013" key="1">
             <BigNewsChart data={R.filter(n => n.DATE < '2014', this.state.chartdata)} />
           </TabPane >
@@ -55,6 +55,9 @@ class BigNewsMain extends React.Component {
           </TabPane >
           <TabPane tab="2019" key="7" >
             <BigNewsChart data={R.filter(n => n.DATE >= '2019' & n.DATE < '2020', this.state.chartdata)} />
+          </TabPane >
+          <TabPane tab="2020" key="8" >
+            <BigNewsChart data={R.filter(n => n.DATE >= '2020' & n.DATE < '2021', this.state.chartdata)} />
           </TabPane >
         </Tabs>
       </div>

@@ -78,6 +78,7 @@ class Position extends React.Component {
   fetchData = () => {
     const pms = request('/api/position');
     pms.then((datas) => {
+      console.warn(datas);
       this.setState({ data: datas.data });
       this.getFilters();
     }).catch(err => ({ err }));
